@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Noto+Serif:ital,wght@0,100..900;1,100..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container": "#1d2023", "tertiary-fixed-dim": "#d3c5aa", "on-tertiary-fixed-variant": "#4f4631", "secondary": "#b3c9e0", "tertiary-container": "#bfb197", "outline-variant": "#4d4635", "on-secondary-fixed-variant": "#34495c", "secondary-fixed-dim": "#b3c9e0", "surface-tint": "#e9c349", "inverse-surface": "#e1e2e7", "on-primary": "#3c2f00", "on-error": "#690005", "on-secondary-container": "#a5bbd2", "surface-bright": "#37393d", "error-container": "#93000a", "on-surface": "#e1e2e7", "tertiary": "#dbcdb2", "surface-container-lowest": "#0b0e11", "primary": "#f2ca50", "surface-container-low": "#191c1f", "background": "#111417", "error": "#ffb4ab", "inverse-on-surface": "#2e3134", "on-error-container": "#ffdad6", "on-tertiary-fixed": "#221b0a", "secondary-fixed": "#cfe5fd", "primary-fixed-dim": "#e9c349", "on-secondary-fixed": "#061d2f", "surface-container-high": "#272a2e", "tertiary-fixed": "#f0e1c5", "outline": "#99907c", "on-primary-fixed-variant": "#574500", "primary-container": "#d4af37", "secondary-container": "#374b5f", "on-background": "#e1e2e7", "on-secondary": "#1d3245", "surface-container-highest": "#323538", "on-primary-container": "#554300", "surface-variant": "#323538", "on-tertiary": "#382f1d", "on-surface-variant": "#d0c5af", "surface-dim": "#111417", "on-primary-fixed": "#241a00", "on-tertiary-container": "#4d4430", "primary-fixed": "#ffe088", "inverse-primary": "#735c00", "surface": "#111417" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1.25rem", "space-xs": "0.375rem", "gutter-mobile": "1rem", "gutter": "2rem", "space-sm": "0.75rem", "space-lg": "2.25rem", "margin-mobile": "1.25rem", "space-xl": "3.5rem", "margin": "3.5rem" }, "fontFamily": { "display-hero": [ "Noto Serif" ], "headline-sm": [ "Noto Serif" ], "label-md": [ "Space Grotesk" ], "body-md": [ "Newsreader" ], "label-sm": [ "Space Grotesk" ], "display-hero-mobile": [ "Noto Serif" ], "label-lg": [ "Space Grotesk" ], "body-lg": [ "Newsreader" ], "headline-md": [ "Noto Serif" ], "title-lg": [ "Noto Serif" ], "headline-lg": [ "Noto Serif" ], "body-sm": [ "Newsreader" ], "headline-lg-mobile": [ "Noto Serif" ] }, "fontSize": { "display-hero": [ "56px", { "lineHeight": "72px", "fontWeight": "700" } ], "headline-sm": [ "22px", { "lineHeight": "30px", "fontWeight": "500" } ], "label-md": [ "12px", { "lineHeight": "16px", "fontWeight": "500" } ], "body-md": [ "16px", { "lineHeight": "26px", "fontWeight": "400" } ], "label-sm": [ "10px", { "lineHeight": "14px", "fontWeight": "600" } ], "display-hero-mobile": [ "36px", { "lineHeight": "48px", "fontWeight": "700" } ], "label-lg": [ "14px", { "lineHeight": "20px", "fontWeight": "500" } ], "body-lg": [ "18px", { "lineHeight": "30px", "fontWeight": "400" } ], "headline-md": [ "28px", { "lineHeight": "38px", "fontWeight": "600" } ], "title-lg": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ], "headline-lg": [ "40px", { "lineHeight": "52px", "fontWeight": "600" } ], "body-sm": [ "14px", { "lineHeight": "22px", "fontWeight": "400" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "38px", "fontWeight": "600" } ] } } } };</script><style>@media(max-width:640px){body{overflow-x:hidden}header,nav{max-width:100%;flex-wrap:wrap}main{padding-left:12px!important;padding-right:12px!important}.max-w-\[1280px\],.max-w-\[1200px\],.max-w-\[1100px\]{width:100%;max-width:100%}.grid{grid-template-columns:minmax(0,1fr)!important}.flex{min-width:0}.text-5xl{font-size:2rem!important}.text-6xl{font-size:2.25rem!important}img,video{max-width:100%;height:auto}.overflow-x-auto{max-width:100vw}.container{padding-left:12px;padding-right:12px}button,a{max-width:100%;overflow-wrap:anywhere}}</style>
+<style id="mobile-overflow-fix">
+html,body{max-width:100%;overflow-x:hidden}
+body{min-width:0;overflow-x:hidden}
+*,*::before,*::after{box-sizing:border-box;min-width:0}
+header{max-width:100vw;overflow-x:hidden}
+header nav{min-width:0;max-width:100%;flex-wrap:wrap;gap:.4rem!important}
+header nav a{white-space:nowrap}
+img,video,svg,canvas{max-width:100%}
+@media(max-width:640px){body{overflow-x:hidden!important}main{width:100%;max-width:100vw!important;overflow-x:hidden}main section,main div{max-width:100%}header>div{width:100%;max-width:100vw;min-width:0;flex-wrap:wrap;gap:.35rem}header nav{justify-content:center}header nav a{font-size:11px!important;padding:.25rem .4rem!important}.text-6xl{font-size:2rem!important;line-height:1.2!important}.text-5xl{font-size:1.8rem!important;line-height:1.25!important}.grid{grid-template-columns:minmax(0,1fr)!important}.max-w-\[1280px\],.max-w-\[1200px\],.max-w-\[1100px\]{width:100%;max-width:100%}.flex{min-width:0;flex-wrap:wrap}img,video{max-width:100%;height:auto}button,a{max-width:100%;overflow-wrap:anywhere}}
+@media(max-width:375px){header nav a{font-size:10px!important;padding:.2rem!important}main{padding-left:8px!important;padding-right:8px!important}.text-4xl{font-size:1.6rem!important}.text-3xl{font-size:1.4rem!important}}
+</style>
+
+<style id="mobile-navigation-fix">
+@media(max-width:640px){
+ body{padding-top:112px!important;overflow-x:hidden!important}
+ header.fixed{position:fixed!important;left:0;right:0;height:68px!important;overflow:visible!important;z-index:100!important}
+ header.fixed>div{height:68px!important;min-height:68px!important;padding:6px 12px!important;gap:8px!important;flex-wrap:nowrap!important}
+ header.fixed>div>:first-child{flex:1 1 auto;min-width:0!important;gap:8px!important}
+ header.fixed>div>:first-child span.uppercase{display:none!important}
+ header.fixed nav{display:flex!important;position:absolute!important;top:68px!important;left:0!important;right:0!important;width:100%!important;height:44px!important;max-width:100vw!important;overflow-x:auto!important;overflow-y:hidden!important;flex-wrap:nowrap!important;justify-content:flex-start!important;gap:4px!important;padding:2px 8px!important;background:rgba(17,20,23,.98)!important;z-index:100!important;scrollbar-width:none}
+ header.fixed nav a{display:flex!important;align-items:center!important;justify-content:center!important;flex:0 0 auto!important;min-height:40px!important;max-width:none!important;white-space:nowrap!important;overflow-wrap:normal!important;font-size:13px!important;padding:6px 12px!important}
+ main.pt-20{padding-top:0!important}
+ .h-\[780px\]{height:calc(100dvh - 150px)!important}
+ footer{padding-bottom:88px!important}
+}
+</style>
+
+</head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_4px_30px_rgba(0,0,0,0.65)]"><div class="h-20 max-w-[1280px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-md" href="index.html"><div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary shadow-[0_0_16px_rgba(212,175,55,0.2)]"><span class="material-symbols-outlined text-[24px]">crown</span></div><div class="flex flex-col"><span class="font-title-lg text-title-lg text-primary tracking-wide" id="siteTitleHeader">حكام مصر عبر العصور</span><span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">Egyptian Rulers Through History</span></div></a></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm rounded-lg"><a class="font-title-lg text-title-lg text-on-surface-variant hover:text-primary transition-colors py-space-xs px-space-sm" data-path="al-raisiya" href="index.html">الرئيسية</a><a class="font-title-lg text-title-lg text-on-surface-variant hover:text-primary transition-colors py-space-xs px-space-sm" data-path="tawr-al-qissa" href="story.html">طور القصة</a><a aria-current="page" class="transition-colors py-space-xs px-space-sm bg-primary-container text-on-primary-container font-headline-sm rounded-lg" data-path="tasaffah-bihurriya" href="free.html">تصفح بحرية</a><a class="font-title-lg text-title-lg text-on-surface-variant hover:text-primary transition-colors py-space-xs px-space-sm" data-path="man-ana" href="about.html">من أنا</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-xs bg-primary text-on-primary font-title-lg text-title-lg rounded shadow-[0_0_24px_rgba(212,175,55,0.35)] hover:bg-primary-fixed hover:text-on-primary-fixed transition-all" data-path="ibda-al-rihla" href="story.html">ابدأ الرحلة</a><a class="w-8 h-8 rounded-full bg-primary flex items-center justify-center" href="about.html" title="من أنا"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></a></div></div></header><div class="mx-auto my-3 max-w-[1280px] px-4"><p class="rounded-md border border-primary/30 bg-surface-container-low px-3 py-2 text-center text-sm text-on-surface-variant">إعادة تخيل فني بالذكاء الاصطناعي، مش صور أو فيديو توثيقي. المعلومات المختصرة مستندة إلى مصادر مختارة. <a href="about.html#sources" class="underline">المصادر والمنهج</a></p></div>
+<main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<div class="max-w-[1280px] mx-auto w-full px-margin-mobile md:px-margin py-space-md flex flex-col gap-space-md">
+<!-- Top Bar Navigation & Dynasty Tracker -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm bg-surface-container-low px-space-md py-space-sm rounded-lg shadow-sm">
+<div class="flex items-center gap-space-sm">
+<a class="inline-flex items-center gap-space-xs text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg" href="free.html" id="backToRulerLink">
+<span class="material-symbols-outlined text-[20px] rotate-180">arrow_forward</span>
+<span id="backToRulerText">العودة إلى صفحة الحاكم</span>
+</a>
+<span class="text-outline-variant font-label-md">/</span>
+<div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-0.5 rounded-full">
+<span class="font-label-sm text-label-sm text-tertiary" id="topEraBadge">الأسرة الأولى العتيقة (حوالي ٣١٥٠ ق.م)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container hover:bg-surface-container-high text-primary font-title-lg text-title-lg rounded transition-all shadow-sm" href="chat.html" id="switchRulerBtn">
+<span id="nextRulerLabel">الحاكم التالي</span>
+<span class="material-symbols-outlined text-[18px]">keyboard_double_arrow_left</span>
+</a>
+</div>
+</div>
+<!-- Main Workspace: Asymmetric Split Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Pharaoh Archeological Dossier / Identity Column (4 Cols) -->
+<aside class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Royal Bust / Portrait Card -->
+<div class="relative bg-surface-container-low rounded-xl overflow-hidden shadow-xl flex flex-col">
+<!-- Background Glow Effect -->
+<div class="absolute -top-20 -right-20 w-48 h-48 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Hero Bust Visual -->
+<div class="relative h-80 w-full overflow-hidden bg-surface-container-lowest">
+<img alt="صورة الحاكم" class="w-full h-full object-cover object-top filter contrast-125 hover:scale-105 transition-transform duration-700" id="rulerPortrait" src="portraits/01-mina.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/40 to-transparent"></div>
+<!-- Consciousness Live Status Chip -->
+<div class="absolute top-space-sm right-space-sm flex items-center gap-space-xs bg-surface-container-lowest/90 backdrop-blur-md px-space-sm py-1 rounded-full shadow-lg">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+</span>
+<span class="font-label-sm text-label-sm text-primary tracking-wide" id="connectionStatusText">محادثة تجريبية</span>
+</div>
+<!-- Cartouche Serekh Insignia -->
+<div class="absolute bottom-space-sm left-space-sm bg-surface-container-highest/80 backdrop-blur-md px-space-sm py-space-xs rounded flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-[24px]">shield</span>
+<span class="font-label-sm text-label-sm text-tertiary" id="rulerCartoucheLabel">ملف تاريخي</span>
+</div>
+</div>
+<!-- Identity Details -->
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-baseline justify-between gap-space-xs">
+<div>
+<h1 class="font-headline-md text-headline-md text-primary tracking-wide" id="rulerName">الملك مينا نارمر</h1>
+<p class="font-title-lg text-title-lg text-on-surface-variant" id="rulerTitle">مُوحِّد القطرين وصاحب التاجين الخالدين</p>
+</div>
+<span class="font-label-md text-label-md text-tertiary px-space-xs py-0.5 bg-surface-container rounded shrink-0" id="rulerIdBadge">#01</span>
+</div>
+<!-- Metric Strip -->
+<div class="grid grid-cols-2 gap-space-xs py-space-xs">
+<div class="bg-surface-container p-space-xs rounded flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">سنوات الحكم</span>
+<span class="font-headline-sm text-headline-sm text-on-surface" id="rulerYears">~ ٣١٥٠ ق.م</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="rulerEraLabel">العصر العتيق</span>
+</div>
+<div class="bg-surface-container p-space-xs rounded flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">العاصمة</span>
+<span class="font-headline-sm text-headline-sm text-primary" id="rulerCapital">منف</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">مقر الحكم</span>
+</div>
+</div>
+<!-- Major Royal Decrees -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<span class="font-label-md text-label-md text-tertiary flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary">history_edu</span>
+                حقيقة تاريخية:
+              </span>
+<ul class="flex flex-col gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-start gap-space-xs bg-surface-container/50 p-space-xs rounded">
+<span class="material-symbols-outlined text-primary text-[16px] mt-0.5 shrink-0">verified</span>
+<span id="rulerFact">دمج مملكتي مصر العليا (الجنوب) ومصر السفلى (الشمال) تحت سيادة مركزية واحدة.</span>
+</li>
+</ul>
+</div>
+<!-- Relic Telemetry Artifact Badge -->
+<div class="bg-surface-container-high p-space-sm rounded-lg flex items-center justify-between mt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[24px]">award_star</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">نبذة تعليمية مستقلة</span>
+<span class="font-label-sm text-label-sm text-outline" id="rulerEraSub">حكام مصر عبر العصور</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary px-space-xs py-1 rounded bg-surface-container-lowest">ملخص تعليمي</span>
+</div>
+</div>
+</div>
+<!-- Royal Seal Quote Box -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-md flex items-center gap-space-md relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 opacity-5">
+<span class="material-symbols-outlined text-[120px] text-primary">temple_hindu</span>
+</div>
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[28px]">format_quote</span>
+</div>
+<p class="font-body-md text-body-md text-tertiary-fixed-dim leading-relaxed" id="rulerQuoteBox">
+            «كل حجر في وادي النيل يروي قصة من قصص حكام مصر عبر العصور.»
+          </p>
+</div>
+</aside>
+<!-- Pharaoh AI Interactive Sanctuary (8 Cols) -->
+<section class="lg:col-span-8 flex flex-col h-[780px] bg-surface-container-low rounded-xl shadow-2xl overflow-hidden relative">
+<!-- Chat Chamber Header -->
+<div class="px-space-md py-space-sm bg-surface-container flex items-center justify-between shadow-sm z-10">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary shadow-inner">
+<span class="material-symbols-outlined text-[22px]">smart_toy</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-lg text-title-lg text-on-surface" id="chatHeaderRulerName">محاكاة تخيلية عن الحاكم</span>
+<span class="font-label-sm text-label-sm bg-primary/10 text-primary px-space-xs rounded">محاكاة تخيلية بالذكاء الاصطناعي</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline" id="chatHeaderSub">محاكاة حوارية مستندة إلى الملفات التاريخية</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="p-space-xs text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded transition-colors" id="clearChatBtn" title="إعادة بدء المحادثة">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+</button>
+<div class="w-px h-6 bg-surface-container-highest mx-1"></div>
+<span class="font-label-sm text-label-sm text-tertiary bg-surface-container-lowest px-space-sm py-1 rounded-full flex items-center gap-1" id="channelStatusBadge">
+<span class="w-2 h-2 rounded-full bg-primary-container" id="channelStatusDot"></span>
+<span id="channelStatusLabel">المحادثة التفاعلية جاهزة</span>
+</span>
+</div>
+</div>
+<!-- Scrollable Conversation Feed -->
+<div class="flex-1 overflow-y-auto p-space-md flex flex-col gap-space-md" id="chatFeed">
+</div>
+<!-- Quick Inquiries Tray (Prompts Carousel) -->
+<div class="p-space-sm bg-surface-container-low flex flex-col gap-space-xs shadow-inner">
+<div class="flex items-center justify-between px-space-xs">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">lightbulb</span>
+<span id="chipsHeading">أسئلة مقترحة عن الحاكم:</span>
+</span>
+</div>
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 scrollbar-none" id="promptChipsContainer">
+<button class="prompt-chip shrink-0 inline-flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-on-surface rounded-full text-body-sm font-body-sm transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">help</span>
+<span>ما أبرز ما يُعرف عن حكمه لمصر؟</span>
+</button>
+<button class="prompt-chip shrink-0 inline-flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-on-surface rounded-full text-body-sm font-body-sm transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">help</span>
+<span>لماذا اختار هذه العاصمة مقراً لحكمه؟</span>
+</button>
+<button class="prompt-chip shrink-0 inline-flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-on-surface rounded-full text-body-sm font-body-sm transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">help</span>
+<span>ما أهم الدروس التي يتركها عصره للأجيال؟</span>
+</button>
+</div>
+</div>
+<!-- Chat Input Deck -->
+<div class="p-space-md bg-surface-container">
+<form class="flex items-center gap-space-sm bg-surface-container-lowest p-space-xs rounded-xl shadow-inner" id="royalChatForm">
+<!-- Voice Input Activation Button -->
+<button class="w-11 h-11 rounded-lg bg-surface-container-high hover:bg-surface-bright text-tertiary hover:text-primary flex items-center justify-center transition-all shrink-0" id="voiceRecordBtn" title="إدخال السؤال صوتياً" type="button">
+<span class="material-symbols-outlined text-[22px]">mic</span>
+</button>
+<!-- Text Input Field -->
+<input autocomplete="off" class="flex-1 bg-transparent text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none px-space-sm" dir="rtl" id="messageInput" placeholder="اكتب سؤالك عن الحاكم هنا..." type="text"/>
+<!-- Send Command Button -->
+<button class="h-11 px-space-lg bg-primary hover:bg-primary-fixed text-on-primary font-title-lg text-title-lg rounded-lg shadow-[0_0_16px_rgba(242,202,80,0.3)] flex items-center gap-space-xs transition-all shrink-0 disabled:opacity-50" id="sendBtn" type="submit">
+<span>إرسال</span>
+<span class="material-symbols-outlined text-[20px] rotate-180">send</span>
+</button>
+</form>
+<div class="flex items-center justify-between mt-space-xs px-space-xs text-outline font-label-sm text-label-sm">
+<span>محاكاة تخيلية مولّدة بالذكاء الاصطناعي؛ ليست صوت الحاكم ولا جهة رسمية وقد تخطئ.</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+              إجابات تجريبية مولّدة بالذكاء الاصطناعي
+            </span>
+</div>
+</div>
+</section>
+</div>
+<!-- Supplementary Cultural Knowledge Carousel -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter py-space-sm">
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">architecture</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-title-lg text-title-lg text-on-surface">الإرث المعماري والحضاري</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">معلومات موجزة عن العواصم والمنشآت في عصور مختلفة، مع مصادر مختارة.</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">local_fire_department</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-title-lg text-title-lg text-on-surface">السيادة والنظام</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">من بدايات الدولة المصرية إلى العصور المختلفة التي مرّت بها.</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">menu_book</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-title-lg text-title-lg text-on-surface">الحوار مع التاريخ</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">تجربة تفاعلية تتيح لك استكشاف سيرة كل حاكم وفهم سياق عصره بلغة حية ومباشرة.</p>
+</div>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-xl shadow-[0_-1px_12px_rgba(0,0,0,0.5)]"><div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin flex flex-col items-center justify-center text-center gap-space-md"><div class="flex items-center gap-space-sm text-primary"><span class="material-symbols-outlined text-[28px]">account_balance</span><span class="font-headline-sm text-headline-sm text-primary" id="siteTitleFooter">موقع تعليمي غير رسمي عن حكام مصر</span></div><p class="max-w-2xl font-body-sm text-body-sm text-on-surface-variant">سجل إمبراطوري وتوثيق أثري شامل لملوك وملكات وأسر مصر القديمة عبر العصور، مستلهم من عظمة الحضارة المصرية الخالدة.</p><div class="w-48 h-0.5 bg-outline-variant/40"></div><div class="flex flex-wrap items-center justify-center gap-space-md font-label-md text-label-md text-outline"><a class="hover:text-primary transition-colors" href="index.html">الرئيسية</a><span>•</span><a class="hover:text-primary transition-colors" href="story.html">طور القصة</a><span>•</span><a class="hover:text-primary transition-colors" href="free.html">تصفح بحرية</a><span>•</span><a class="hover:text-primary transition-colors" href="about.html">من أنا</a></div></div></footer>
+<script src="js/config.js"></script>
+<script src="js/data.js"></script>
+<script>
+  (function initRoyalChatPage() {
+    const rulersList = typeof RULERS !== 'undefined' && Array.isArray(RULERS) ? RULERS : [];
+    const cfg = typeof CONFIG !== 'undefined' ? CONFIG : {};
+
+    const params = new URLSearchParams(window.location.search);
+    const requestedId = params.get('id');
+
+    const currentIndex = rulersList.findIndex(r => String(r.id) === String(requestedId));
+    if (currentIndex === -1) {
+      window.location.replace('free.html');
+      return;
+    }
+
+    const ruler = rulersList[currentIndex];
+    const nextRuler = rulersList[(currentIndex + 1) % rulersList.length];
+
+    // Update page title only; header/footer brand stays as designed
+    if (cfg.siteTitle) {
+      document.title = `محاكاة تخيلية عن ${ruler.name} — ${cfg.siteTitle}`;
+    } else {
+      document.title = `محاكاة تخيلية عن ${ruler.name}`;
+    }
+
+    // Populate ruler dossier & navigation elements
+    const portraitEl = document.getElementById('rulerPortrait');
+    portraitEl.src = ruler.portrait || 'portraits/01-mina.jpg';
+    portraitEl.alt = ruler.name;
+
+    document.getElementById('rulerName').textContent = ruler.name;
+    document.getElementById('rulerTitle').textContent = ruler.title || '';
+    document.getElementById('rulerIdBadge').textContent = `#${String(currentIndex + 1).padStart(2, '0')}`;
+    document.getElementById('rulerYears').textContent = ruler.years || '';
+    document.getElementById('rulerEraLabel').textContent = ruler.eraLabel || ruler.era || '';
+    document.getElementById('rulerCapital').textContent = ruler.capital || '';
+    document.getElementById('rulerFact').textContent = ruler.fact || '';
+    document.getElementById('rulerEraSub').textContent = ruler.eraLabel || '';
+    document.getElementById('rulerCartoucheLabel').textContent = ruler.capital || 'ملف تاريخي';
+    document.getElementById('topEraBadge').textContent = `${ruler.eraLabel || ruler.era || ''} (${ruler.years || ''})`;
+
+    document.getElementById('rulerQuoteBox').textContent =
+      `${ruler.name}، ${ruler.title}. ${ruler.fact}`;
+
+    const backLink = document.getElementById('backToRulerLink');
+    backLink.href = `ruler.html?id=${encodeURIComponent(ruler.id)}`;
+    document.getElementById('backToRulerText').textContent = `العودة إلى ${ruler.name}`;
+
+    const switchBtn = document.getElementById('switchRulerBtn');
+    switchBtn.href = `chat.html?id=${encodeURIComponent(nextRuler.id)}`;
+    document.getElementById('nextRulerLabel').textContent = `الحاكم التالي: ${nextRuler.name}`;
+
+    document.getElementById('chatHeaderRulerName').textContent = `محاكاة تخيلية عن ${ruler.name}`;
+    document.getElementById('chatHeaderSub').textContent = `${ruler.title} • ${ruler.eraLabel || ''}`;
+    document.getElementById('chipsHeading').textContent = `أسئلة مقترحة عن ${ruler.name}:`;
+
+    const input = document.getElementById('messageInput');
+    input.placeholder = `اسأل عن ${ruler.name} وعصره...`;
+
+    // Update suggested chips dynamically with ruler context
+    const chipsContainer = document.getElementById('promptChipsContainer');
+    const suggestedQuestions = [
+      `ما أبرز ما يُعرف عن ${ruler.name}؟`,
+      `ما الذي ميّز حكم ${ruler.name} في ${ruler.capital || 'مصر'}؟`,
+      `ما مصادر معلومات هذه المحاكاة عن ${ruler.name}؟`
+    ];
+    chipsContainer.innerHTML = suggestedQuestions.map(q => `
+      <button class="prompt-chip shrink-0 inline-flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-on-surface rounded-full text-body-sm font-body-sm transition-all shadow-sm" type="button">
+        <span class="material-symbols-outlined text-[16px] text-primary">help</span>
+        <span>${escapeHtml(q)}</span>
+      </button>
+    `).join('');
+
+    // Check API connection status indicator
+    const apiEndpoint = (cfg.apiEndpoint || '').trim();
+    const apiKey = (cfg.apiKey || '').trim();
+    const modelName = (cfg.model || 'llama-3.3-70b-versatile').trim();
+    if (!apiEndpoint || !apiKey) {
+      document.getElementById('connectionStatusText').textContent = 'وضع العرض المشروعي';
+      document.getElementById('channelStatusLabel').textContent = !apiEndpoint ? 'بانتظار ربط apiEndpoint' : 'بانتظار مفتاح Groq';
+      document.getElementById('channelStatusDot').classList.remove('bg-primary-container');
+      document.getElementById('channelStatusDot').classList.add('bg-outline');
+    }
+
+    // Fetch king-bot-info.json once on load (ignore failure silently)
+    let kingBotInfo = null;
+    if (cfg.kingBotInfoFile) {
+      fetch(cfg.kingBotInfoFile)
+        .then(res => res.ok ? res.json() : null)
+        .then(data => {
+          if (data && typeof data === 'object') {
+            kingBotInfo = data[String(ruler.id)] !== undefined ? data[String(ruler.id)] : data;
+          }
+        })
+        .catch(() => {
+          kingBotInfo = null;
+        });
+    }
+
+    function buildDefaultSystemPrompt() {
+      const name = ruler.name || 'حاكم مصر';
+      const title = ruler.title ? `، ${ruler.title}` : '';
+      const years = ruler.years ? ` خلال فترة حكمي (${ruler.years})` : '';
+      const era = ruler.eraLabel || ruler.era ? ` في ${ruler.eraLabel || ruler.era}` : '';
+      const capital = ruler.capital ? ` وعاصمتي ${ruler.capital}` : '';
+      const fact = ruler.fact ? ` من أبرز ما يُعرف عني: ${ruler.fact}` : '';
+      return `أنت «المرشد التخيلي» في موقع تعليمي مستقل: راوٍ مولّد بالذكاء الاصطناعي يجيب عن أسئلة الزائر عن الحاكم المصري ${name}${title}${years}${era}${capital}.${fact} تحدث بصيغة الغائب عن الحاكم دائمًا ولا تتقمص شخصيته أبدًا، ولا تقل «أنا ${name}» ولا تدّعِ أنك الشخص نفسه أو صوتًا رسميًا؛ إن سُئلت من أنت فقل إنك محاكاة تخيلية بالذكاء الاصطناعي. أجب باللغة العربية الفصحى المعاصرة البسيطة انطلاقًا من سياق عصره التاريخي.`;
+    }
+
+    // قواعد سلوك ثابتة تُضاف لكل شخصية (بتعليمات صاحب الموقع):
+    // الالتزام بالشخصية، عربية بسيطة بلغة المستخدم، الإجابة من المعلومات المتاحة فقط،
+    // «لا أعرف» أو «الروايات تختلف» عند الجهل أو الخلاف، بلا إهانات، حساسية دينية،
+    // لا معرفة حديثة خارج عصر الحاكم إلا إذا سُئل بصفته راويًا، وإجابات قصيرة.
+    const ROYAL_RULES = 'قواعد صارمة: أنت راوٍ تخيلي مولّد بالذكاء الاصطناعي في موقع تعليمي مستقل، تتحدث عن الحاكم بصيغة الغائب ولا تتقمص شخصيته أبدًا ولا تدّعي أنك هو أو صوت رسمي، حتى لو وردت نصوص المرجع بضمير المتكلم فاعتبرها اقتباسًا أدبيًا لا هوية لك. تحدث بعربية بسيطة قريبة من لغة المستخدم. أجب فقط من المعلومات المتاحة عن حياة الحاكم وعصره؛ إن لم تعرف شيئًا فقل «لا أعرف»، وإن كان محل خلاف بين المؤرخين فقل «الروايات تختلف» ولا تخترع حقائق. لا تُهن أحدًا ولا تسخر من أحد، واحترم الأديان والمعتقدات ولا تتطرق لما يثير الحساسية الدينية بسوء. لا تنسب للحاكم معرفة بما جاء بعد عصره. اجعل إجاباتك قصيرة ومركزة.';
+
+    let cachedSystemPrompt = null;
+    function getSystemPrompt() {
+      if (cachedSystemPrompt !== null) return cachedSystemPrompt;
+
+      const entry = kingBotInfo && typeof kingBotInfo === 'object' ? kingBotInfo : null;
+      if (entry) {
+        const personaVal = entry.persona ?? entry['شخصية'] ?? '';
+        const bioVal = entry.bio ?? entry['معلومات'] ?? '';
+        const factsRaw = entry.facts ?? '';
+        const factsVal = Array.isArray(factsRaw) ? factsRaw.join(' ') : String(factsRaw || '');
+        const styleVal = entry.style_notes ?? '';
+
+        const parts = [personaVal, bioVal, factsVal, styleVal]
+          .map(v => (typeof v === 'string' ? v.trim() : ''))
+          .filter(Boolean);
+
+        if (parts.length > 0) {
+          cachedSystemPrompt = ROYAL_RULES + '\n\n' + parts.join('\n\n');
+          return cachedSystemPrompt;
+        }
+      }
+
+      cachedSystemPrompt = ROYAL_RULES + '\n\n' + buildDefaultSystemPrompt();
+      return cachedSystemPrompt;
+    }
+
+    const form = document.getElementById('royalChatForm');
+    const chatFeed = document.getElementById('chatFeed');
+    const sendBtn = document.getElementById('sendBtn');
+    const clearBtn = document.getElementById('clearChatBtn');
+    const voiceBtn = document.getElementById('voiceRecordBtn');
+    let isWaiting = false;
+    let conversationHistory = [];
+
+    function escapeHtml(str) {
+      const div = document.createElement('div');
+      div.textContent = String(str);
+      return div.innerHTML;
+    }
+
+    function buildGreetingText() {
+      const factSentence = ruler.fact ? ` ${ruler.fact}` : '';
+      return `أهلًا بك. هذه محاكاة تخيلية مولّدة بالذكاء الاصطناعي عن ${ruler.name}، ${ruler.title}؛ ليست صوته الحقيقي ولا جهة رسمية.${factSentence} اسألني عن سيرته وعصره.`;
+    }
+
+    function renderInitialFeed() {
+      conversationHistory = [];
+      chatFeed.innerHTML = `
+        <div class="flex items-center justify-center gap-space-sm my-space-xs">
+          <div class="h-px bg-surface-container-highest flex-1"></div>
+          <span class="font-label-sm text-label-sm text-outline px-space-sm py-0.5 bg-surface-container rounded-full">
+            بداية المحاكاة التخيلية عن ${escapeHtml(ruler.name)}
+          </span>
+          <div class="h-px bg-surface-container-highest flex-1"></div>
+        </div>
+      `;
+      appendKingMessage(buildGreetingText(), 'مقدمة المحاكاة');
+    }
+
+    function appendKingMessage(text, footerNote = 'سجل موقع تعليمي مستقل') {
+      const msgWrapper = document.createElement('div');
+      msgWrapper.className = 'flex items-start gap-space-sm max-w-[85%] self-start';
+      msgWrapper.innerHTML = `
+        <div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0 shadow-[0_0_12px_rgba(212,175,55,0.3)]">
+          <span class="material-symbols-outlined text-[22px]">crown</span>
+        </div>
+        <div class="flex flex-col gap-1.5">
+          <div class="flex items-center gap-space-xs">
+            <span class="font-label-md text-label-md text-primary font-bold">المرشد التخيلي</span>
+            <span class="font-label-sm text-label-sm text-outline">محاكاة عن ${escapeHtml(ruler.name)}</span>
+          </div>
+          <div class="bg-surface-container-high p-space-md rounded-2xl rounded-tr-none text-on-surface shadow-md">
+            <p class="font-body-md text-body-md leading-relaxed whitespace-pre-line">${escapeHtml(text)}</p>
+          </div>
+          <span class="font-label-sm text-label-sm text-outline px-1">${escapeHtml(footerNote)}</span>
+        </div>
+      `;
+      chatFeed.appendChild(msgWrapper);
+      chatFeed.scrollTop = chatFeed.scrollHeight;
+    }
+
+    function appendUserMessage(text) {
+      const msgWrapper = document.createElement('div');
+      msgWrapper.className = 'flex items-start gap-space-sm max-w-[85%] self-end flex-row-reverse';
+      msgWrapper.innerHTML = `
+        <div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined text-[20px]">person</span>
+        </div>
+        <div class="flex flex-col items-end gap-1.5">
+          <div class="bg-primary text-on-primary p-space-md rounded-2xl rounded-tl-none shadow-md">
+            <p class="font-body-md text-body-md leading-relaxed whitespace-pre-line">${escapeHtml(text)}</p>
+          </div>
+          <span class="font-label-sm text-label-sm text-outline px-1">سؤال الزائر</span>
+        </div>
+      `;
+      chatFeed.appendChild(msgWrapper);
+      chatFeed.scrollTop = chatFeed.scrollHeight;
+    }
+
+    function appendNotConnectedNotice(userQuestion) {
+      const noticeWrapper = document.createElement('div');
+      noticeWrapper.className = 'flex items-start gap-space-sm max-w-[90%] self-start';
+      noticeWrapper.innerHTML = `
+        <div class="w-10 h-10 rounded-full bg-surface-container-highest text-tertiary flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined text-[22px]">settings_ethernet</span>
+        </div>
+        <div class="flex flex-col gap-1.5">
+          <div class="bg-surface-container border border-outline-variant/50 p-space-md rounded-2xl rounded-tr-none text-on-surface-variant shadow-md">
+            <p class="font-body-sm text-body-sm leading-relaxed">
+              الخدمة غير متصلة حالياً؛ يلزم ضبط <code class="text-primary">apiKey</code> في ملف <code class="text-primary">js/config.js</code> لتفعيل المحاكاة التخيلية عن <strong class="text-on-surface">${escapeHtml(ruler.name)}</strong>.
+            </p>
+            <p class="font-label-sm text-label-sm text-outline mt-2">
+              سؤالك المسجل: «${escapeHtml(userQuestion)}»
+            </p>
+          </div>
+        </div>
+      `;
+      chatFeed.appendChild(noticeWrapper);
+      chatFeed.scrollTop = chatFeed.scrollHeight;
+    }
+
+    function appendErrorBubble(errorText) {
+      const errWrapper = document.createElement('div');
+      errWrapper.className = 'flex items-start gap-space-sm max-w-[90%] self-start';
+      errWrapper.innerHTML = `
+        <div class="w-10 h-10 rounded-full bg-error-container text-on-error-container flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined text-[22px]">error</span>
+        </div>
+        <div class="flex flex-col gap-1.5">
+          <div class="bg-error-container/40 border border-error/50 p-space-md rounded-2xl rounded-tr-none text-on-error-container shadow-md">
+            <p class="font-body-sm text-body-sm leading-relaxed">${escapeHtml(errorText)}</p>
+          </div>
+          <span class="font-label-sm text-label-sm text-error px-1">تعذر إتمام الاتصال</span>
+        </div>
+      `;
+      chatFeed.appendChild(errWrapper);
+      chatFeed.scrollTop = chatFeed.scrollHeight;
+    }
+
+    function showTypingIndicator() {
+      const typingEl = document.createElement('div');
+      typingEl.id = 'typingIndicator';
+      typingEl.className = 'flex items-center gap-space-sm self-start';
+      typingEl.innerHTML = `
+        <div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+          <span class="material-symbols-outlined text-[20px]">more_horiz</span>
+        </div>
+        <div class="bg-surface-container px-space-md py-space-xs rounded-full text-outline font-label-sm text-label-sm">
+          المرشد التخيلي يكتب...
+        </div>
+      `;
+      chatFeed.appendChild(typingEl);
+      chatFeed.scrollTop = chatFeed.scrollHeight;
+    }
+
+    function removeTypingIndicator() {
+      const typingEl = document.getElementById('typingIndicator');
+      if (typingEl) typingEl.remove();
+    }
+
+    async function handleSendMessage(rawText) {
+      const text = (rawText || '').trim();
+      if (!text || isWaiting) return;
+
+      appendUserMessage(text);
+      input.value = '';
+
+      if (!apiKey || !apiEndpoint) {
+        appendNotConnectedNotice(text);
+        return;
+      }
+
+      isWaiting = true;
+      sendBtn.disabled = true;
+      showTypingIndicator();
+
+      const messagesPayload = [
+        { role: 'system', content: getSystemPrompt() },
+        ...conversationHistory.map(m => ({ role: m.role, content: m.content })),
+        { role: 'user', content: text }
+      ];
+
+      try {
+        const response = await fetch(apiEndpoint, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + apiKey
+          },
+          body: JSON.stringify({
+            model: modelName,
+            messages: messagesPayload,
+            temperature: 0.7,
+            max_tokens: 1024
+          })
+        });
+
+        removeTypingIndicator();
+
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+
+        const data = await response.json();
+        const replyText = data &&
+          Array.isArray(data.choices) &&
+          data.choices[0] &&
+          data.choices[0].message &&
+          typeof data.choices[0].message.content === 'string'
+            ? data.choices[0].message.content.trim()
+            : '';
+
+        if (!replyText) {
+          throw new Error('Empty response');
+        }
+
+        conversationHistory.push({ role: 'user', content: text });
+        conversationHistory.push({ role: 'assistant', content: replyText });
+        appendKingMessage(replyText);
+      } catch (err) {
+        removeTypingIndicator();
+        appendErrorBubble('تعذر الاتصال بالخادم حالياً، يرجى التحقق من مفتاح API أو الشبكة والمحاولة مرة أخرى.');
+      } finally {
+        isWaiting = false;
+        sendBtn.disabled = false;
+        input.focus();
+      }
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      handleSendMessage(input.value);
+    });
+
+    chipsContainer.addEventListener('click', function (e) {
+      const chip = e.target.closest('.prompt-chip');
+      if (!chip) return;
+      const labelSpan = chip.querySelector('span:last-child');
+      const questionText = labelSpan ? labelSpan.textContent : chip.textContent;
+      handleSendMessage(questionText);
+    });
+
+    clearBtn.addEventListener('click', function () {
+      if (isWaiting) return;
+      renderInitialFeed();
+    });
+
+    // Optional Web Speech API voice-to-text if supported by browser
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (SpeechRecognition && voiceBtn) {
+      const recognition = new SpeechRecognition();
+      recognition.lang = 'ar-EG';
+      recognition.interimResults = false;
+      recognition.maxAlternatives = 1;
+
+      voiceBtn.addEventListener('click', function () {
+        if (isWaiting) return;
+        try {
+          recognition.start();
+          voiceBtn.classList.add('text-primary', 'bg-surface-bright');
+        } catch (err) {
+          // Ignore if already started
+        }
+      });
+
+      recognition.addEventListener('result', function (event) {
+        const transcript = event.results?.[0]?.[0]?.transcript || '';
+        if (transcript) {
+          input.value = transcript;
+          handleSendMessage(transcript);
+        }
+      });
+
+      recognition.addEventListener('end', function () {
+        voiceBtn.classList.remove('text-primary', 'bg-surface-bright');
+      });
+
+      recognition.addEventListener('error', function () {
+        voiceBtn.classList.remove('text-primary', 'bg-surface-bright');
+      });
+    } else if (voiceBtn) {
+      voiceBtn.addEventListener('click', function () {
+        input.focus();
+      });
+    }
+
+    renderInitialFeed();
+  })();
+</script></body></html>

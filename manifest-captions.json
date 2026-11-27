@@ -1,0 +1,1327 @@
+{
+  "1": {
+    "number": 1,
+    "ruler_en": "Mina",
+    "ruler_ar": "مينا",
+    "video": "01-mina.mp4",
+    "images": [
+      {
+        "file": "01-mina-portrait.jpg",
+        "role": "portrait",
+        "caption_ar": "مينا"
+      },
+      {
+        "file": "01-mina-02.jpg",
+        "role": "achievement",
+        "caption_ar": "مصر منقسمة: أرضان قبل التوحيد"
+      },
+      {
+        "file": "01-mina-03.jpg",
+        "role": "achievement",
+        "caption_ar": "الزحف شمالًا: حملة التوحيد"
+      },
+      {
+        "file": "01-mina-04.jpg",
+        "role": "achievement",
+        "caption_ar": "لوحة التوحيد: تخليد النصر"
+      },
+      {
+        "file": "01-mina-05.jpg",
+        "role": "achievement",
+        "caption_ar": "تأسيس منف: عاصمة الدولة الموحدة"
+      },
+      {
+        "file": "01-mina-06.jpg",
+        "role": "achievement",
+        "caption_ar": "النيل: شريان مصر"
+      },
+      {
+        "file": "01-mina-07.jpg",
+        "role": "achievement",
+        "caption_ar": "الأسرة الأولى: بداية الدولة"
+      },
+      {
+        "file": "01-mina-08.jpg",
+        "role": "achievement",
+        "caption_ar": "الجدل التاريخي: بين مينا ونعرمر"
+      },
+      {
+        "file": "01-mina-09.jpg",
+        "role": "achievement",
+        "caption_ar": "قوائم الملوك: أول اسم في القائمة"
+      }
+    ]
+  },
+  "2": {
+    "number": 2,
+    "ruler_en": "Djoser",
+    "ruler_ar": "زوسر",
+    "video": "02-djoser.mp4",
+    "images": [
+      {
+        "file": "02-djoser-portrait.jpg",
+        "role": "portrait",
+        "caption_ar": "زوسر"
+      },
+      {
+        "file": "02-djoser-02.jpg",
+        "role": "achievement",
+        "caption_ar": "مصر قبل الأهرام: مقابر الملوك من اللبن"
+      },
+      {
+        "file": "02-djoser-03.jpg",
+        "role": "achievement",
+        "caption_ar": "حلم لم تره الدنيا: بيت خلود من الحجر"
+      },
+      {
+        "file": "02-djoser-04.jpg",
+        "role": "achievement",
+        "caption_ar": "إمحوتب: الوزير والمهندس العبقري"
+      },
+      {
+        "file": "02-djoser-05.jpg",
+        "role": "achievement",
+        "caption_ar": "ست درجات: تعلو أكثر من ٦٠ مترًا"
+      },
+      {
+        "file": "02-djoser-06.jpg",
+        "role": "achievement",
+        "caption_ar": "أول صرح حجري في التاريخ: سقارة، غربي منف"
+      },
+      {
+        "file": "02-djoser-07.jpg",
+        "role": "achievement",
+        "caption_ar": "مدينة الخلود: سور عظيم وفناء عيد السد"
+      },
+      {
+        "file": "02-djoser-08.jpg",
+        "role": "achievement",
+        "caption_ar": "طريق الملوك: من سقارة إلى أهرامات الجيزة"
+      },
+      {
+        "file": "02-djoser-09.jpg",
+        "role": "achievement",
+        "caption_ar": "إمحوتب إلهًا: للحكمة والطب بعد ألفي عام"
+      }
+    ]
+  },
+  "3": {
+    "number": 3,
+    "ruler_en": "Khufu",
+    "ruler_ar": "خوفو",
+    "video": "03-khufu.mp4",
+    "images": [
+      {
+        "file": "03-khufu-portrait.jpg",
+        "role": "portrait",
+        "caption_ar": "خوفو"
+      },
+      {
+        "file": "03-khufu-02.jpg",
+        "role": "achievement",
+        "caption_ar": "إرث أبي سنفرو: علّم مصر بناء الأهرام"
+      },
+      {
+        "file": "03-khufu-03.jpg",
+        "role": "achievement",
+        "caption_ar": "هضبة الجيزة: صخرة صلبة غربي النيل"
+      },
+      {
+        "file": "03-khufu-04.jpg",
+        "role": "achievement",
+        "caption_ar": "الهرم الأكبر: أعلى بناء في الأرض ٣٨٠٠ عامًا"
+      },
+      {
+        "file": "03-khufu-05.jpg",
+        "role": "achievement",
+        "caption_ar": "مليونان وثلاثمائة ألف كتلة: بدقة تحير العقول"
+      },
+      {
+        "file": "03-khufu-06.jpg",
+        "role": "achievement",
+        "caption_ar": "بناه المصريون: لا العبيد كما زعم هيرودوت"
+      },
+      {
+        "file": "03-khufu-07.jpg",
+        "role": "achievement",
+        "caption_ar": "هُم إيونو: الوزير المشرف على البناء"
+      },
+      {
+        "file": "03-khufu-08.jpg",
+        "role": "achievement",
+        "caption_ar": "مدينة العمال: ومراكب من أرز لبنان"
+      },
+      {
+        "file": "03-khufu-09.jpg",
+        "role": "achievement",
+        "caption_ar": "تمثال من العاج: وحجارة أصدق من الأقاويل"
+      }
+    ]
+  },
+  "4": {
+    "number": 4,
+    "ruler_en": "Mentuhotep II",
+    "ruler_ar": "منتوحتب الثاني",
+    "video": "04-mentuhotep.mp4",
+    "images": [
+      {
+        "file": "04-mentuhotep-portrait.jpg",
+        "role": "portrait",
+        "caption_ar": "منتوحتب الثاني"
+      },
+      {
+        "file": "04-mentuhotep-02.jpg",
+        "role": "achievement",
+        "caption_ar": "مصر مقسومة: شمال وجنوب بلا ملك واحد"
+      },
+      {
+        "file": "04-mentuhotep-03.jpg",
+        "role": "achievement",
+        "caption_ar": "عامي الرابع عشر: تدنيس مقابر أبيدوس، فكان إعلان الحرب"
+      },
+      {
+        "file": "04-mentuhotep-04.jpg",
+        "role": "achievement",
+        "caption_ar": "الزحف شمالًا: ستون بطلًا يرقدون بجانب معبدي"
+      },
+      {
+        "file": "04-mentuhotep-05.jpg",
+        "role": "achievement",
+        "caption_ar": "وحّدت التاجين: في عامي التاسع والثلاثين"
+      },
+      {
+        "file": "04-mentuhotep-06.jpg",
+        "role": "achievement",
+        "caption_ar": "سماتاوي: موحّد الأرضين"
+      },
+      {
+        "file": "04-mentuhotep-07.jpg",
+        "role": "achievement",
+        "caption_ar": "دولة جديدة من طيبة: الولاء للعرش وحده"
+      },
+      {
+        "file": "04-mentuhotep-08.jpg",
+        "role": "achievement",
+        "caption_ar": "بلاد كوش: عاد الأمن إلى الطرق والخير إلى الأسواق"
+      },
+      {
+        "file": "04-mentuhotep-09.jpg",
+        "role": "achievement",
+        "caption_ar": "معبد الدير البحري: مصاطب ألهمت حتشبسوت بعد خمسمائة عام"
+      }
+    ]
+  },
+  "5": {
+    "number": 5,
+    "ruler_en": "Senusret III",
+    "ruler_ar": "سنوسرت الثالث",
+    "video": "05-senusret.mp4",
+    "images": [
+      {
+        "file": "05-senusret-portrait.jpg",
+        "role": "portrait",
+        "caption_ar": "سنوسرت الثالث"
+      },
+      {
+        "file": "05-senusret-02.jpg",
+        "role": "achievement",
+        "caption_ar": "أمراء الأقاليم: نفوذ ينازع العرش سلطته"
+      },
+      {
+        "file": "05-senusret-03.jpg",
+        "role": "achievement",
+        "caption_ar": "خريطة جديدة لمصر: ولايات كبرى ترفع أمرها إلى وزيري"
+      },
+      {
+        "file": "05-senusret-04.jpg",
+        "role": "achievement",
+        "caption_ar": "طبقة جديدة: موظفون من أبناء الشعب"
+      },
+      {
+        "file": "05-senusret-05.jpg",
+        "role": "achievement",
+        "caption_ar": "حملات إلى بلاد كوش: وسّعت بها حدود مصر"
+      },
+      {
+        "file": "05-senusret-06.jpg",
+        "role": "achievement",
+        "caption_ar": "لوحة سمنة: جعلت حدي أبعد من حدود آبائي"
+      },
+      {
+        "file": "05-senusret-07.jpg",
+        "role": "achievement",
+        "caption_ar": "قلاع الجنوب: تحرس التجارة وتحمي مناجم الذهب"
+      },
+      {
+        "file": "05-senusret-08.jpg",
+        "role": "achievement",
+        "caption_ar": "قناة الجندل الأول: سفن التجار آمنة بين مصر والنوبة"
+      },
+      {
+        "file": "05-senusret-09.jpg",
+        "role": "achievement",
+        "caption_ar": "الفن مرآة الوجوه: شابًا واثقًا وشيخًا أتعبته الدولة"
+      }
+    ]
+  },
+  "6": {
+    "number": 6,
+    "ruler_en": "Ahmose I",
+    "ruler_ar": "أحمس الأول",
+    "video": "06-ahmose.mp4",
+    "images": [
+      {
+        "file": "06-ahmose-portrait.jpg",
+        "role": "portrait",
+        "caption_ar": "أحمس الأول"
+      },
+      {
+        "file": "06-ahmose-02.jpg",
+        "role": "achievement",
+        "caption_ar": "مصر مقسومة: الهكسوس في الشمال والنوبة في الجنوب"
+      },
+      {
+        "file": "06-ahmose-03.jpg",
+        "role": "achievement",
+        "caption_ar": "ملك طفل: قتل أبي ومات أخي، فاعتليت العرش"
+      },
+      {
+        "file": "06-ahmose-04.jpg",
+        "role": "achievement",
+        "caption_ar": "الملكة أححتب: وصية على العرش حتى اشتد عودي"
+      },
+      {
+        "file": "06-ahmose-05.jpg",
+        "role": "achievement",
+        "caption_ar": "حصار أواريس: برًا وبحرًا حتى سقطت"
+      },
+      {
+        "file": "06-ahmose-06.jpg",
+        "role": "achievement",
+        "caption_ar": "شاروحين: حصار ثلاث سنوات"
+      },
+      {
+        "file": "06-ahmose-07.jpg",
+        "role": "achievement",
+        "caption_ar": "جنوبًا إلى النوبة: مناجم الذهب تعود إلى مصر"
+      },
+      {
+        "file": "06-ahmose-08.jpg",
+        "role": "achievement",
+        "caption_ar": "هرم أبيدوس: آخر هرم يُبنى على أرض مصر"
+      },
+      {
+        "file": "06-ahmose-09.jpg",
+        "role": "achievement",
+        "caption_ar": "أحمس بن إيبانا: جندي حفظ المعارك على جدران مقبرته"
+      }
+    ]
+  },
+  "7": {
+    "number": 7,
+    "ruler_en": "Hatshepsut",
+    "ruler_ar": "حتشبسوت",
+    "video": "07-hatshepsut.mp4",
+    "images": [
+      {
+        "file": "07-hatshepsut-portrait.jpg",
+        "role": "portrait",
+        "caption_ar": "حتشبسوت"
+      },
+      {
+        "file": "07-hatshepsut-02.jpg",
+        "role": "achievement",
+        "caption_ar": "أميرة في القصر: ابنة تحتمس الأول"
+      },
+      {
+        "file": "07-hatshepsut-03.jpg",
+        "role": "achievement",
+        "caption_ar": "زوجة الملك: الزوجة الملكية العظمى لتحتمس الثاني"
+      },
+      {
+        "file": "07-hatshepsut-04.jpg",
+        "role": "achievement",
+        "caption_ar": "وصية على العرش: باسم تحتمس الثالث الطفل"
+      },
+      {
+        "file": "07-hatshepsut-05.jpg",
+        "role": "achievement",
+        "caption_ar": "تاج الملوك: ألقاب الملوك كلها"
+      },
+      {
+        "file": "07-hatshepsut-06.jpg",
+        "role": "achievement",
+        "caption_ar": "بعثة بونت: سفن محملة بالبخور والمر والذهب"
+      },
+      {
+        "file": "07-hatshepsut-07.jpg",
+        "role": "achievement",
+        "caption_ar": "الدير البحري: معبد على سفح الجبل"
+      },
+      {
+        "file": "07-hatshepsut-08.jpg",
+        "role": "achievement",
+        "caption_ar": "مسلات الكرنك: بناء وترميم في أنحاء البلاد"
+      },
+      {
+        "file": "07-hatshepsut-09.jpg",
+        "role": "achievement",
+        "caption_ar": "محو الاسم: اختلف العلماء فيمن فعل ذلك ولماذا"
+      }
+    ]
+  },
+  "8": {
+    "number": 8,
+    "ruler_en": "Thutmose III",
+    "ruler_ar": "تحتمس الثالث",
+    "video": "08-thutmose.mp4",
+    "images": [
+      {
+        "file": "08-thutmose-portrait.jpg",
+        "role": "portrait",
+        "caption_ar": "تحتمس الثالث"
+      },
+      {
+        "file": "08-thutmose-02.jpg",
+        "role": "achievement",
+        "caption_ar": "ملك طفل: ابن تحتمس الثاني وإيزيس"
+      },
+      {
+        "file": "08-thutmose-03.jpg",
+        "role": "achievement",
+        "caption_ar": "مع حتشبسوت: سنوات من التعلم والتدريب"
+      },
+      {
+        "file": "08-thutmose-04.jpg",
+        "role": "achievement",
+        "caption_ar": "قائد الجيش: ثم الملك الوحيد على مصر"
+      },
+      {
+        "file": "08-thutmose-05.jpg",
+        "role": "achievement",
+        "caption_ar": "تحالف كنعان: بقيادة ملك قادش عند مجدو"
+      },
+      {
+        "file": "08-thutmose-06.jpg",
+        "role": "achievement",
+        "caption_ar": "معركة مجدو: طريق ضيق عبر الجبل"
+      },
+      {
+        "file": "08-thutmose-07.jpg",
+        "role": "achievement",
+        "caption_ar": "نهر الفرات: قتال ميتاني ولوحة تذكارية"
+      },
+      {
+        "file": "08-thutmose-08.jpg",
+        "role": "achievement",
+        "caption_ar": "أبناء الأمراء: يتعلمون في مصر"
+      },
+      {
+        "file": "08-thutmose-09.jpg",
+        "role": "achievement",
+        "caption_ar": "سجلات الكرنك: انتصارات على جدران معبد آمون"
+      }
+    ]
+  },
+  "9": {
+    "number": 9,
+    "ruler_en": "Amenhotep III",
+    "ruler_ar": "أمنحتب الثالث",
+    "video": "09-amenhotep3.mp4",
+    "images": [
+      {
+        "file": "09-amenhotep3-portrait.jpg",
+        "role": "portrait",
+        "caption_ar": "أمنحتب الثالث"
+      },
+      {
+        "file": "09-amenhotep3-02.jpg",
+        "role": "achievement",
+        "caption_ar": "ابن تحتمس الرابع: وريث إمبراطورية غنية"
+      },
+      {
+        "file": "09-amenhotep3-03.jpg",
+        "role": "achievement",
+        "caption_ar": "الملكة تي: إلى جانبه طوال حكمه"
+      },
+      {
+        "file": "09-amenhotep3-04.jpg",
+        "role": "achievement",
+        "caption_ar": "السلام والرخاء: قمة الغنى والفن"
+      },
+      {
+        "file": "09-amenhotep3-05.jpg",
+        "role": "achievement",
+        "caption_ar": "رسائل العمارنة: مع ملوك ميتاني وبابل"
+      },
+      {
+        "file": "09-amenhotep3-06.jpg",
+        "role": "achievement",
+        "caption_ar": "أميرات ميتاني: صداقة بين البلدين"
+      },
+      {
+        "file": "09-amenhotep3-07.jpg",
+        "role": "achievement",
+        "caption_ar": "قصر الملقطة: على الضفة الغربية للنيل"
+      },
+      {
+        "file": "09-amenhotep3-08.jpg",
+        "role": "achievement",
+        "caption_ar": "تمثالا ممنون: ما بقي من معبده الجنائزي"
+      },
+      {
+        "file": "09-amenhotep3-09.jpg",
+        "role": "achievement",
+        "caption_ar": "الوريث: ابنه أمنحتب الرابع، أخناتون"
+      }
+    ]
+  },
+  "10": {
+    "number": 10,
+    "ruler_en": "Akhenaten",
+    "ruler_ar": "إخناتون",
+    "video": "10-akhenaten.mp4",
+    "images": [
+      {
+        "file": "10-akhenaten-portrait.jpg",
+        "role": "portrait",
+        "caption_ar": "إخناتون"
+      },
+      {
+        "file": "10-akhenaten-02.jpg",
+        "role": "achievement",
+        "caption_ar": "وريث أمنحتب الثالث: عهد طويل ومزدهر"
+      },
+      {
+        "file": "10-akhenaten-03.jpg",
+        "role": "achievement",
+        "caption_ar": "تغيير الاسم: من أمنحتب الرابع إلى إخناتون"
+      },
+      {
+        "file": "10-akhenaten-04.jpg",
+        "role": "achievement",
+        "caption_ar": "الإله آتون: قرص الشمس وأشعته ذات الأيدي"
+      },
+      {
+        "file": "10-akhenaten-05.jpg",
+        "role": "achievement",
+        "caption_ar": "أخيتاتون: أفق آتون، تل العمارنة اليوم"
+      },
+      {
+        "file": "10-akhenaten-06.jpg",
+        "role": "achievement",
+        "caption_ar": "فن جديد: صور مختلفة للملك ولعائلته"
+      },
+      {
+        "file": "10-akhenaten-07.jpg",
+        "role": "achievement",
+        "caption_ar": "نفرتيتي: زوجة الملك وست بنات"
+      },
+      {
+        "file": "10-akhenaten-08.jpg",
+        "role": "achievement",
+        "caption_ar": "إزالة آمون: أسماء وصور تمحى من الآثار"
+      },
+      {
+        "file": "10-akhenaten-09.jpg",
+        "role": "achievement",
+        "caption_ar": "بعد الموت: عودة الآلهة القديمة وهجر المدينة"
+      }
+    ]
+  },
+  "11": {
+    "number": 11,
+    "ruler_en": "Ramesses II",
+    "ruler_ar": "رمسيس الثاني",
+    "video": "11-ramesses2.mp4",
+    "images": [
+      {
+        "file": "11-ramesses2-portrait.jpg",
+        "role": "portrait",
+        "caption_ar": "رمسيس الثاني"
+      },
+      {
+        "file": "11-ramesses2-02.jpg",
+        "role": "achievement",
+        "caption_ar": "ابن سيتي الأول: ملك في الخامسة والعشرين"
+      },
+      {
+        "file": "11-ramesses2-03.jpg",
+        "role": "achievement",
+        "caption_ar": "بر رمسيس: عاصمة جديدة في الدلتا"
+      },
+      {
+        "file": "11-ramesses2-04.jpg",
+        "role": "achievement",
+        "caption_ar": "قراصنة الشردانا: هزيمتهم في السنة الثانية"
+      },
+      {
+        "file": "11-ramesses2-05.jpg",
+        "role": "achievement",
+        "caption_ar": "معركة قادش: نتيجتها محل نقاش العلماء"
+      },
+      {
+        "file": "11-ramesses2-06.jpg",
+        "role": "achievement",
+        "caption_ar": "معاهدة السلام: مع الحيثيين"
+      },
+      {
+        "file": "11-ramesses2-07.jpg",
+        "role": "achievement",
+        "caption_ar": "أبو سمبل: معابد ضخمة في النوبة"
+      },
+      {
+        "file": "11-ramesses2-08.jpg",
+        "role": "achievement",
+        "caption_ar": "الملكة نفرتاري: ومقبرتها المشهورة"
+      },
+      {
+        "file": "11-ramesses2-09.jpg",
+        "role": "achievement",
+        "caption_ar": "الرمسيوم: وعقود طويلة من الحكم"
+      }
+    ]
+  },
+  "12": {
+    "number": 12,
+    "ruler_en": "Ramesses III",
+    "ruler_ar": "رمسيس الثالث",
+    "video": "12-ramesses3.mp4",
+    "images": [
+      {
+        "file": "12-ramesses3-portrait.jpg",
+        "role": "portrait",
+        "caption_ar": "رمسيس الثالث"
+      },
+      {
+        "file": "12-ramesses3-02.jpg",
+        "role": "achievement",
+        "caption_ar": "زمن صعب: اضطرابات حول مصر وقوة تضعف"
+      },
+      {
+        "file": "12-ramesses3-03.jpg",
+        "role": "achievement",
+        "caption_ar": "الليبيون: هجوم من الغرب"
+      },
+      {
+        "file": "12-ramesses3-04.jpg",
+        "role": "achievement",
+        "caption_ar": "شعوب البحر: غزو بالبر والبحر"
+      },
+      {
+        "file": "12-ramesses3-05.jpg",
+        "role": "achievement",
+        "caption_ar": "النصر: معارك على اليابسة وعلى النيل"
+      },
+      {
+        "file": "12-ramesses3-06.jpg",
+        "role": "achievement",
+        "caption_ar": "معبد مدينة هابو: المعارك على جدرانه"
+      },
+      {
+        "file": "12-ramesses3-07.jpg",
+        "role": "achievement",
+        "caption_ar": "خزينة مثقلة: كلفة الحروب"
+      },
+      {
+        "file": "12-ramesses3-08.jpg",
+        "role": "achievement",
+        "caption_ar": "إضراب العمال: تأخر الأجور في وادي الملوك"
+      },
+      {
+        "file": "12-ramesses3-09.jpg",
+        "role": "achievement",
+        "caption_ar": "مؤامرة القصر: أوراق المحاكمة باقية"
+      }
+    ]
+  },
+  "13": {
+    "number": 13,
+    "ruler_en": "Cleopatra VII",
+    "ruler_ar": "كليوباترا السابعة",
+    "video": "13-cleopatra.mp4",
+    "images": [
+      {
+        "file": "13-cleopatra-portrait.jpg",
+        "role": "portrait",
+        "caption_ar": "كليوباترا السابعة"
+      },
+      {
+        "file": "13-cleopatra-02.jpg",
+        "role": "achievement",
+        "caption_ar": "الإسكندرية: عاصمة مصر في زمانها"
+      },
+      {
+        "file": "13-cleopatra-03.jpg",
+        "role": "achievement",
+        "caption_ar": "لغات كثيرة: أول حاكم من أسرتها يتعلم المصرية"
+      },
+      {
+        "file": "13-cleopatra-04.jpg",
+        "role": "achievement",
+        "caption_ar": "العرش المقسوم: خلاف مع أخيها وانقسام البلاد"
+      },
+      {
+        "file": "13-cleopatra-05.jpg",
+        "role": "achievement",
+        "caption_ar": "يوليوس قيصر: عودة إلى الحكم وولادة قيصرون"
+      },
+      {
+        "file": "13-cleopatra-06.jpg",
+        "role": "achievement",
+        "caption_ar": "مارك أنطونيو: تحالف بعد مقتل قيصر"
+      },
+      {
+        "file": "13-cleopatra-07.jpg",
+        "role": "achievement",
+        "caption_ar": "استقلال مصر: في وجه القوة الرومانية"
+      },
+      {
+        "file": "13-cleopatra-08.jpg",
+        "role": "achievement",
+        "caption_ar": "معركة أكتيوم: هزيمة بحرية أمام أوكتافيوس"
+      },
+      {
+        "file": "13-cleopatra-09.jpg",
+        "role": "achievement",
+        "caption_ar": "نهاية العصر: مصر ولاية رومانية"
+      }
+    ]
+  },
+  "14": {
+    "number": 14,
+    "ruler_en": "Amr ibn al-As",
+    "ruler_ar": "عمرو بن العاص",
+    "video": "14-amr.mp4",
+    "images": [
+      {
+        "file": "14-amr-portrait.jpg",
+        "role": "portrait",
+        "caption_ar": "عمرو بن العاص"
+      },
+      {
+        "file": "14-amr-02.jpg",
+        "role": "achievement",
+        "caption_ar": "من قريش: مكة وبداية الطريق"
+      },
+      {
+        "file": "14-amr-03.jpg",
+        "role": "achievement",
+        "caption_ar": "بلاد الشام: فتح وولاية على فلسطين"
+      },
+      {
+        "file": "14-amr-04.jpg",
+        "role": "achievement",
+        "caption_ar": "إلى مصر: جيش صغير في مصر البيزنطية"
+      },
+      {
+        "file": "14-amr-05.jpg",
+        "role": "achievement",
+        "caption_ar": "حصن بابليون: حصار قرب القاهرة اليوم"
+      },
+      {
+        "file": "14-amr-06.jpg",
+        "role": "achievement",
+        "caption_ar": "سقوط الحصن: والطريق إلى الإسكندرية"
+      },
+      {
+        "file": "14-amr-07.jpg",
+        "role": "achievement",
+        "caption_ar": "الإسكندرية: معاهدة تضمن الأمان للأهالي"
+      },
+      {
+        "file": "14-amr-08.jpg",
+        "role": "achievement",
+        "caption_ar": "الفسطاط: مدينة جديدة بجوار الحصن"
+      },
+      {
+        "file": "14-amr-09.jpg",
+        "role": "achievement",
+        "caption_ar": "جامع عمرو: يقال إنه أقدم جامع في مصر"
+      }
+    ]
+  },
+  "15": {
+    "number": 15,
+    "ruler_en": "Ahmad ibn Tulun",
+    "ruler_ar": "أحمد بن طولون",
+    "video": "15-tulun.mp4",
+    "images": [
+      {
+        "file": "15-tulun-portrait.jpg",
+        "role": "portrait",
+        "caption_ar": "أحمد بن طولون"
+      },
+      {
+        "file": "15-tulun-02.jpg",
+        "role": "achievement",
+        "caption_ar": "من سامراء: تدريب عسكري ودراسة دينية"
+      },
+      {
+        "file": "15-tulun-03.jpg",
+        "role": "achievement",
+        "caption_ar": "والي مصر: تعيين من الخليفة العباسي"
+      },
+      {
+        "file": "15-tulun-04.jpg",
+        "role": "achievement",
+        "caption_ar": "سلطة محدودة: والمال في يد مسؤول آخر"
+      },
+      {
+        "file": "15-tulun-05.jpg",
+        "role": "achievement",
+        "caption_ar": "جيش وقوة: مصر شبه مستقلة عن بغداد"
+      },
+      {
+        "file": "15-tulun-06.jpg",
+        "role": "achievement",
+        "caption_ar": "ثروة مصر في مصر: إصلاحات اقتصادية وثقافية"
+      },
+      {
+        "file": "15-tulun-07.jpg",
+        "role": "achievement",
+        "caption_ar": "القطائع: مدينة إدارية جديدة قرب الفسطاط"
+      },
+      {
+        "file": "15-tulun-08.jpg",
+        "role": "achievement",
+        "caption_ar": "مسجد ابن طولون: ومئذنته الحلزونية المميزة"
+      },
+      {
+        "file": "15-tulun-09.jpg",
+        "role": "achievement",
+        "caption_ar": "الوريث: خمارويه ودولة نحو خمسة وثلاثين عاما"
+      }
+    ]
+  },
+  "16": {
+    "number": 16,
+    "ruler_en": "al-Mu'izz",
+    "ruler_ar": "المعز لدين الله",
+    "video": "16-muizz.mp4",
+    "images": [
+      {
+        "file": "16-muizz-portrait.jpg",
+        "role": "portrait",
+        "caption_ar": "المعز لدين الله"
+      },
+      {
+        "file": "16-muizz-02.jpg",
+        "role": "achievement",
+        "caption_ar": "المهدية: بلاد أفريقية، تونس اليوم"
+      },
+      {
+        "file": "16-muizz-03.jpg",
+        "role": "achievement",
+        "caption_ar": "الطموح إلى مصر: بوابة الشام والعراق"
+      },
+      {
+        "file": "16-muizz-04.jpg",
+        "role": "achievement",
+        "caption_ar": "مصر الإخشيدية: دولة ضعيفة بعد كافور"
+      },
+      {
+        "file": "16-muizz-05.jpg",
+        "role": "achievement",
+        "caption_ar": "جوهر الصقلي: دخول الجيش دون مقاومة كبيرة"
+      },
+      {
+        "file": "16-muizz-06.jpg",
+        "role": "achievement",
+        "caption_ar": "القاهرة: مدينة جديدة للعاصمة"
+      },
+      {
+        "file": "16-muizz-07.jpg",
+        "role": "achievement",
+        "caption_ar": "الجامع الأزهر: بدأ بناؤه لتدريس العلوم"
+      },
+      {
+        "file": "16-muizz-08.jpg",
+        "role": "achievement",
+        "caption_ar": "الوصول إلى القاهرة: نقل مقر الحكم من المنصورية"
+      },
+      {
+        "file": "16-muizz-09.jpg",
+        "role": "achievement",
+        "caption_ar": "القرامطة والمالية: صد الهجمات وإصلاح مالية الدولة"
+      }
+    ]
+  },
+  "17": {
+    "number": 17,
+    "ruler_en": "Saladin",
+    "ruler_ar": "صلاح الدين",
+    "video": "17-saladin.mp4",
+    "images": [
+      {
+        "file": "17-saladin-portrait.jpg",
+        "role": "portrait",
+        "caption_ar": "صلاح الدين"
+      },
+      {
+        "file": "17-saladin-02.jpg",
+        "role": "achievement",
+        "caption_ar": "تكريت: مولد في أسرة كردية"
+      },
+      {
+        "file": "17-saladin-03.jpg",
+        "role": "achievement",
+        "caption_ar": "مع عمي شيركوه: في خدمة نور الدين"
+      },
+      {
+        "file": "17-saladin-04.jpg",
+        "role": "achievement",
+        "caption_ar": "القاهرة: والي مصر ونهاية الخلافة الفاطمية"
+      },
+      {
+        "file": "17-saladin-05.jpg",
+        "role": "achievement",
+        "caption_ar": "دمشق وحلب: بعد وفاة نور الدين"
+      },
+      {
+        "file": "17-saladin-06.jpg",
+        "role": "achievement",
+        "caption_ar": "توحيد البلاد: مصر والشام وبلاد أخرى"
+      },
+      {
+        "file": "17-saladin-07.jpg",
+        "role": "achievement",
+        "caption_ar": "حطين: النصر على الصليبيين"
+      },
+      {
+        "file": "17-saladin-08.jpg",
+        "role": "achievement",
+        "caption_ar": "القدس: خرج أهلها مقابل فدية"
+      },
+      {
+        "file": "17-saladin-09.jpg",
+        "role": "achievement",
+        "caption_ar": "الحملة الصليبية الثالثة: في مواجهة ريتشارد"
+      }
+    ]
+  },
+  "18": {
+    "number": 18,
+    "ruler_en": "Qutuz",
+    "ruler_ar": "قطز",
+    "video": "18-qutuz.mp4",
+    "images": [
+      {
+        "file": "18-qutuz-portrait.jpg",
+        "role": "portrait",
+        "caption_ar": "قطز"
+      },
+      {
+        "file": "18-qutuz-02.jpg",
+        "role": "achievement",
+        "caption_ar": "أسير ثم مملوك: أصل مختلف عليه بين الروايات"
+      },
+      {
+        "file": "18-qutuz-03.jpg",
+        "role": "achievement",
+        "caption_ar": "في جيش أيبك: من مملوك إلى نائب السلطان"
+      },
+      {
+        "file": "18-qutuz-04.jpg",
+        "role": "achievement",
+        "caption_ar": "وصيّ على ابن أيبك: بينما سقطت بغداد"
+      },
+      {
+        "file": "18-qutuz-05.jpg",
+        "role": "achievement",
+        "caption_ar": "سلطان جديد: بلاد تحتاج قائدًا قويًّا"
+      },
+      {
+        "file": "18-qutuz-06.jpg",
+        "role": "achievement",
+        "caption_ar": "رسل المغول: رفض الاستسلام"
+      },
+      {
+        "file": "18-qutuz-07.jpg",
+        "role": "achievement",
+        "caption_ar": "الزحف إلى الشام: وبيبرس في مقدمة الجيش"
+      },
+      {
+        "file": "18-qutuz-08.jpg",
+        "role": "achievement",
+        "caption_ar": "عين جالوت: سنة ١٢٦٠"
+      },
+      {
+        "file": "18-qutuz-09.jpg",
+        "role": "achievement",
+        "caption_ar": "طريق العودة: مقتل السلطان"
+      }
+    ]
+  },
+  "19": {
+    "number": 19,
+    "ruler_en": "Baybars",
+    "ruler_ar": "بيبرس",
+    "video": "19-baybars.mp4",
+    "images": [
+      {
+        "file": "19-baybars-portrait.jpg",
+        "role": "portrait",
+        "caption_ar": "بيبرس"
+      },
+      {
+        "file": "19-baybars-02.jpg",
+        "role": "achievement",
+        "caption_ar": "من السهوب إلى الرق: قبائل القبجاق بعد الغزو المغولي"
+      },
+      {
+        "file": "19-baybars-03.jpg",
+        "role": "achievement",
+        "caption_ar": "مملوك في القاهرة: في خدمة الصالح أيوب"
+      },
+      {
+        "file": "19-baybars-04.jpg",
+        "role": "achievement",
+        "caption_ar": "المنصورة: هزيمة الحملة الصليبية السابعة"
+      },
+      {
+        "file": "19-baybars-05.jpg",
+        "role": "achievement",
+        "caption_ar": "عين جالوت: في مقدمة الجيش"
+      },
+      {
+        "file": "19-baybars-06.jpg",
+        "role": "achievement",
+        "caption_ar": "مقتل قطز: والروايات تختلف في دوره"
+      },
+      {
+        "file": "19-baybars-07.jpg",
+        "role": "achievement",
+        "caption_ar": "الخلافة في القاهرة: سنة ١٢٦١"
+      },
+      {
+        "file": "19-baybars-08.jpg",
+        "role": "achievement",
+        "caption_ar": "حرب الصليبيين: أرسوف وصفد وأنطاكية"
+      },
+      {
+        "file": "19-baybars-09.jpg",
+        "role": "achievement",
+        "caption_ar": "وجه المغول: ووفاة في دمشق"
+      }
+    ]
+  },
+  "20": {
+    "number": 20,
+    "ruler_en": "Muhammad Ali Pasha",
+    "ruler_ar": "محمد علي",
+    "video": "20-muhammad-ali.mp4",
+    "images": [
+      {
+        "file": "20-muhammad-ali-portrait.jpg",
+        "role": "portrait",
+        "caption_ar": "محمد علي"
+      },
+      {
+        "file": "20-muhammad-ali-02.jpg",
+        "role": "achievement",
+        "caption_ar": "قولة: مولد في ميناء على بحر إيجة"
+      },
+      {
+        "file": "20-muhammad-ali-03.jpg",
+        "role": "achievement",
+        "caption_ar": "مصر ١٨٠١: في فرقة ألبانية عثمانية"
+      },
+      {
+        "file": "20-muhammad-ali-04.jpg",
+        "role": "achievement",
+        "caption_ar": "والي مصر: سنة ١٨٠٥"
+      },
+      {
+        "file": "20-muhammad-ali-05.jpg",
+        "role": "achievement",
+        "caption_ar": "القلعة: نهاية قادة المماليك سنة ١٨١١"
+      },
+      {
+        "file": "20-muhammad-ali-06.jpg",
+        "role": "achievement",
+        "caption_ar": "الجيش الحديث: التجنيد وسيطرة الدولة على الأرض"
+      },
+      {
+        "file": "20-muhammad-ali-07.jpg",
+        "role": "achievement",
+        "caption_ar": "الحجاز والسودان والشام: حملات الجيش المصري"
+      },
+      {
+        "file": "20-muhammad-ali-08.jpg",
+        "role": "achievement",
+        "caption_ar": "نافارينو: هزيمة الأسطول أمام أوروبا"
+      },
+      {
+        "file": "20-muhammad-ali-09.jpg",
+        "role": "achievement",
+        "caption_ar": "الشام: التخلي عن الشام مقابل حكم الأسرة"
+      },
+      {
+        "file": "20-muhammad-ali-10.jpg",
+        "role": "achievement",
+        "caption_ar": "التنحي: سنة ١٨٤٨، والوفاة بعد عام"
+      }
+    ]
+  },
+  "21": {
+    "number": 21,
+    "ruler_en": "Khedive Ismail",
+    "ruler_ar": "إسماعيل",
+    "video": "21-ismail.mp4",
+    "images": [
+      {
+        "file": "21-ismail-portrait.jpg",
+        "role": "portrait",
+        "caption_ar": "إسماعيل"
+      },
+      {
+        "file": "21-ismail-02.jpg",
+        "role": "achievement",
+        "caption_ar": "من القاهرة إلى فرنسا: حفيد محمد علي، وُلد سنة ١٨٣٠"
+      },
+      {
+        "file": "21-ismail-03.jpg",
+        "role": "achievement",
+        "caption_ar": "حكم مصر ١٨٦٣: القطن يرتفع ثمنه"
+      },
+      {
+        "file": "21-ismail-04.jpg",
+        "role": "achievement",
+        "caption_ar": "لقب الخديوي: سنة ١٨٦٧"
+      },
+      {
+        "file": "21-ismail-05.jpg",
+        "role": "achievement",
+        "caption_ar": "ترع وسكك وجسور: لخدمة تجارة القطن"
+      },
+      {
+        "file": "21-ismail-06.jpg",
+        "role": "achievement",
+        "caption_ar": "قناة السويس: افتتاح سنة ١٨٦٩"
+      },
+      {
+        "file": "21-ismail-07.jpg",
+        "role": "achievement",
+        "caption_ar": "القروض: هبوط القطن وزيادة النفقات"
+      },
+      {
+        "file": "21-ismail-08.jpg",
+        "role": "achievement",
+        "caption_ar": "رقابة أوروبية: وبيع حصة قناة السويس"
+      },
+      {
+        "file": "21-ismail-09.jpg",
+        "role": "achievement",
+        "caption_ar": "العزل: سنة ١٨٧٩"
+      }
+    ]
+  },
+  "22": {
+    "number": 22,
+    "ruler_en": "Nasser",
+    "ruler_ar": "جمال عبد الناصر",
+    "video": "22-nasser.mp4",
+    "images": [
+      {
+        "file": "22-nasser-portrait.jpg",
+        "role": "portrait",
+        "caption_ar": "جمال عبد الناصر"
+      },
+      {
+        "file": "22-nasser-02.jpg",
+        "role": "achievement",
+        "caption_ar": "الإسكندرية ١٩١٨: ولد لأسرة جذورها من أسيوط"
+      },
+      {
+        "file": "22-nasser-03.jpg",
+        "role": "achievement",
+        "caption_ar": "الضباط الأحرار: تنظيم داخل الجيش"
+      },
+      {
+        "file": "22-nasser-04.jpg",
+        "role": "achievement",
+        "caption_ar": "ثورة ١٩٥٢: نهاية الملكية وإعلان الجمهورية"
+      },
+      {
+        "file": "22-nasser-05.jpg",
+        "role": "achievement",
+        "caption_ar": "رئيس الوزراء والجمهورية: ١٩٥٤ و١٩٥٦"
+      },
+      {
+        "file": "22-nasser-06.jpg",
+        "role": "achievement",
+        "caption_ar": "الإصلاح الزراعي: الحد من نفوذ كبار الملاك"
+      },
+      {
+        "file": "22-nasser-07.jpg",
+        "role": "achievement",
+        "caption_ar": "تأميم قناة السويس: ٢٦ يوليو ١٩٥٦"
+      },
+      {
+        "file": "22-nasser-08.jpg",
+        "role": "achievement",
+        "caption_ar": "عدم الانحياز والوحدة مع سورية: ١٩٥٨ إلى ١٩٦١"
+      },
+      {
+        "file": "22-nasser-09.jpg",
+        "role": "achievement",
+        "caption_ar": "بعد نكسة ١٩٦٧: إعادة بناء الجيش"
+      }
+    ]
+  },
+  "23": {
+    "number": 23,
+    "ruler_en": "Sadat",
+    "ruler_ar": "أنور السادات",
+    "video": "23-sadat.mp4",
+    "images": [
+      {
+        "file": "23-sadat-portrait.jpg",
+        "role": "portrait",
+        "caption_ar": "أنور السادات"
+      },
+      {
+        "file": "23-sadat-02.jpg",
+        "role": "achievement",
+        "caption_ar": "المنوفية ١٩١٨: والأكاديمية العسكرية"
+      },
+      {
+        "file": "23-sadat-03.jpg",
+        "role": "achievement",
+        "caption_ar": "الضباط الأحرار: وثورة ١٩٥٢"
+      },
+      {
+        "file": "23-sadat-04.jpg",
+        "role": "achievement",
+        "caption_ar": "رئاسة مجلس الأمة: ونيابة الرئيس"
+      },
+      {
+        "file": "23-sadat-05.jpg",
+        "role": "achievement",
+        "caption_ar": "رئيسا للجمهورية: أكتوبر ١٩٧٠"
+      },
+      {
+        "file": "23-sadat-06.jpg",
+        "role": "achievement",
+        "caption_ar": "ثورة التصحيح: ١٩٧١"
+      },
+      {
+        "file": "23-sadat-07.jpg",
+        "role": "achievement",
+        "caption_ar": "حرب أكتوبر: ١٩٧٣ والانفتاح الاقتصادي"
+      },
+      {
+        "file": "23-sadat-08.jpg",
+        "role": "achievement",
+        "caption_ar": "زيارة القدس: نوفمبر ١٩٧٧"
+      },
+      {
+        "file": "23-sadat-09.jpg",
+        "role": "achievement",
+        "caption_ar": "كامب ديفيد والسلام: نوبل ١٩٧٨ ومعاهدة ١٩٧٩"
+      }
+    ]
+  },
+  "24": {
+    "number": 24,
+    "ruler_en": "Mubarak",
+    "ruler_ar": "حسني مبارك",
+    "video": "24-mubarak.mp4",
+    "images": [
+      {
+        "file": "24-mubarak-portrait.jpg",
+        "role": "portrait",
+        "caption_ar": "حسني مبارك"
+      },
+      {
+        "file": "24-mubarak-02.jpg",
+        "role": "achievement",
+        "caption_ar": "المنوفية ١٩٢٨: قرية كفر المصيلحة"
+      },
+      {
+        "file": "24-mubarak-03.jpg",
+        "role": "achievement",
+        "caption_ar": "الكلية الحربية: والأكاديمية الجوية"
+      },
+      {
+        "file": "24-mubarak-04.jpg",
+        "role": "achievement",
+        "caption_ar": "قائد القوات الجوية: من الطيران إلى القيادة"
+      },
+      {
+        "file": "24-mubarak-05.jpg",
+        "role": "achievement",
+        "caption_ar": "نائب الرئيس: ١٩٧٥"
+      },
+      {
+        "file": "24-mubarak-06.jpg",
+        "role": "achievement",
+        "caption_ar": "الرئاسة ١٩٨١: بعد اغتيال السادات"
+      },
+      {
+        "file": "24-mubarak-07.jpg",
+        "role": "achievement",
+        "caption_ar": "استفتاءات وانتخابات: ١٩٨٧ و١٩٩٣ و١٩٩٩ و٢٠٠٥"
+      },
+      {
+        "file": "24-mubarak-08.jpg",
+        "role": "achievement",
+        "caption_ar": "السلام والعلاقات الدولية: مفاوضات السلام والولايات المتحدة"
+      },
+      {
+        "file": "24-mubarak-09.jpg",
+        "role": "achievement",
+        "caption_ar": "يناير ٢٠١١: التنحي في ١١ فبراير"
+      }
+    ]
+  },
+  "25": {
+    "number": 25,
+    "ruler_en": "el-Sisi",
+    "ruler_ar": "عبد الفتاح السيسي",
+    "video": "25-sisi.mp4",
+    "images": [
+      {
+        "file": "25-sisi-portrait.jpg",
+        "role": "portrait",
+        "caption_ar": "عبد الفتاح السيسي"
+      },
+      {
+        "file": "25-sisi-02.jpg",
+        "role": "achievement",
+        "caption_ar": "القاهرة ١٩٥٤: ولد في حي الجمالية"
+      },
+      {
+        "file": "25-sisi-05.jpg",
+        "role": "achievement",
+        "caption_ar": "بعد ثورة ٢٠١١: المجلس الأعلى للقوات المسلحة"
+      },
+      {
+        "file": "25-sisi-08.jpg",
+        "role": "achievement",
+        "caption_ar": "الرئاسة ٢٠١٤: الاستقالة من الجيش والترشح"
+      },
+      {
+        "file": "25-sisi-09.jpg",
+        "role": "achievement",
+        "caption_ar": "٢٠١٨ و٢٠٢٣: وتعديلات دستورية ٢٠١٩"
+      },
+      {
+        "file": "25-sisi-03.jpg",
+        "role": "achievement",
+        "caption_ar": "الأكاديمية العسكرية: التخرج سنة ١٩٧٧"
+      },
+      {
+        "file": "25-sisi-04.jpg",
+        "role": "achievement",
+        "caption_ar": "سلاح المشاة ثم المخابرات الحربية"
+      },
+      {
+        "file": "25-sisi-06.jpg",
+        "role": "achievement",
+        "caption_ar": "تعيينه وزيرًا للدفاع في أغسطس ٢٠١٢"
+      }
+    ]
+  }
+}
