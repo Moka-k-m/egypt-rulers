@@ -28,7 +28,7 @@ img,video,svg,canvas{max-width:100%}
 }
 </style>
 
-<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&amp;family=Reem+Kufi:wght@500;700&amp;display=swap" rel="stylesheet"/><link rel="stylesheet" href="css/pharaonic.css"/><style>h1,h2,h3,.font-headline-sm,.font-headline-md,.font-headline-lg,.font-display-hero,.font-display-hero-mobile,.font-headline-lg-mobile,.font-title-lg{font-family:"Reem Kufi","Noto Serif",serif!important}.font-body-md,.font-body-lg,.font-body-sm,p{font-family:"Amiri","Newsreader",serif}</style><link rel="stylesheet" href="css/tw-story.css"/></head>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&amp;family=Reem+Kufi:wght@500;700&amp;display=swap" rel="stylesheet"/><link rel="stylesheet" href="css/pharaonic.css"/><link rel="stylesheet" href="css/gate.css"/><style>h1,h2,h3,.font-headline-sm,.font-headline-md,.font-headline-lg,.font-display-hero,.font-display-hero-mobile,.font-headline-lg-mobile,.font-title-lg{font-family:"Reem Kufi","Noto Serif",serif!important}.font-body-md,.font-body-lg,.font-body-sm,p{font-family:"Amiri","Newsreader",serif}</style><link rel="stylesheet" href="css/tw-story.css"/></head>
 <body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
 
 <!-- SHARED HEADER NAV ON ALL STATES -->
@@ -1296,6 +1296,24 @@ img,video,svg,canvas{max-width:100%}
     setState('B');
   });
 
+
+  // grand ruler transition
+  (function(){
+    var oA=renderStateA,oB=renderStateB,last=currentIndex;
+    function wrap(o){return function(){
+      if(currentIndex===last||!window.RulerGate){last=currentIndex;return o();}
+      var r=rulersList[currentIndex];last=currentIndex;var self=this,args=arguments;
+      RulerGate.run({name:r.name,era:r.eraLabel,years:r.years,tag:'الفصل '+(currentIndex+1)+' من '+rulersList.length},function(){o.apply(self,args)});
+    }}
+    renderStateA=wrap(oA);renderStateB=wrap(oB);
+  })();
+
+
+  // enter the cinematic journey instead of the in-page player
+  ['stateA-start-watch-btn','stateA-center-watch-btn'].forEach(function(id){
+    var b=document.getElementById(id);if(!b)return;
+    b.addEventListener('click',function(e){e.stopImmediatePropagation();e.preventDefault();location.href='journey.html?r='+encodeURIComponent(rulersList[currentIndex].id)},true);
+  });
   document.getElementById('nextMonarchButton').addEventListener('click', () => {
     if (currentIndex < rulersList.length - 1) {
       currentIndex += 1;
@@ -1364,4 +1382,4 @@ img,video,svg,canvas{max-width:100%}
   setState('A');
 })();
 </script>
-<script src="js/pharaonic.js" defer></script></body></html>
+<script src="js/gate.js" defer></script><script src="js/pharaonic.js" defer></script></body></html>

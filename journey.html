@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar"><head><meta charset="utf-8"/>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<meta name="theme-color" content="#050914"/>
+<title>الرحلة | حكام مصر عبر العصور</title>
+<meta name="description" content="رحلة سينمائية متواصلة عبر حكام مصر من مينا إلى العصر الحديث."/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%93%82%80%3C/text%3E%3C/svg%3E"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&amp;family=Reem+Kufi:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/gate.css"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;background:#03060f;color:#e8d8b0;font-family:'Amiri',serif;overflow:hidden;overscroll-behavior:none}
+#jr{position:fixed;inset:0;height:100vh;height:100dvh;background:#03060f;overflow:hidden}
+.bgp{position:absolute;inset:-6%;background:center/cover no-repeat;filter:blur(28px) brightness(.45) saturate(1.2);transform:scale(1.05);transition:opacity .8s}
+video.v{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#03060f;opacity:0;transition:opacity .5s}
+video.v.cur{opacity:1}
+@media (min-aspect-ratio:1/1){video.v{left:50%;width:min(100vw,calc(100vh*9/16));width:min(100vw,calc(100dvh*9/16));transform:translateX(-50%);inset:0 auto 0 auto;box-shadow:0 0 0 2px rgba(212,175,55,.5),0 0 80px rgba(0,0,0,.8)}}
+.bar{position:absolute;left:0;right:0;pointer-events:none;z-index:3;display:flex;align-items:center;justify-content:space-between;padding:0 18px}
+.bar.t{justify-content:flex-start;top:0;height:calc(64px + env(safe-area-inset-top));padding-top:env(safe-area-inset-top);background:linear-gradient(180deg,rgba(3,6,15,.92),rgba(3,6,15,0))}
+.bar.b{bottom:0;height:calc(90px + env(safe-area-inset-bottom));background:linear-gradient(0deg,rgba(3,6,15,.94),rgba(3,6,15,0))}
+.nm,.era{display:none}.nm{font:700 22px/1.2 'Amiri',serif;color:#f2ca50;text-shadow:0 2px 10px #000}
+.era{font:500 12px/1 'Reem Kufi',serif;letter-spacing:.14em;color:#d4af37;margin-top:4px}
+.ct{direction:ltr;font:500 13px/1 'Reem Kufi',serif;color:#e8d8b0;opacity:.85}
+#prog{position:absolute;left:0;right:0;bottom:calc(env(safe-area-inset-bottom));height:3px;background:rgba(212,175,55,.18);z-index:4}
+#prog i{display:block;height:100%;width:0;background:linear-gradient(90deg,#8a6d1a,#f2ca50);box-shadow:0 0 10px #f2ca50;float:right}
+#ctl{direction:ltr;position:absolute;left:0;right:0;bottom:calc(22px + env(safe-area-inset-bottom));z-index:6;display:flex;justify-content:center;gap:18px;transition:opacity .5s}
+.ib{width:52px;height:52px;border-radius:50%;border:1.5px solid #d4af37;background:rgba(5,9,20,.55);color:#f2ca50;display:grid;place-items:center;cursor:pointer;box-shadow:0 0 14px rgba(212,175,55,.25)}
+.ib svg{width:22px;height:22px;fill:currentColor}
+.ib:active{background:rgba(212,175,55,.3)}
+#top{position:absolute;top:calc(12px + env(safe-area-inset-top));left:14px;z-index:6;transition:opacity .5s}
+#top .ib{width:42px;height:42px}
+.hide #ctl,.hide #top{opacity:0;pointer-events:none}
+.hide .bar.t .nm,.hide .bar.t .era{opacity:1}
+#entry,#end{position:absolute;inset:0;z-index:8;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;background:#03060f;overflow:hidden;transition:opacity 1s}
+#entry>*,#end>*{position:relative;z-index:2}
+.kb{position:absolute!important;inset:-8%;z-index:0!important;background:url(pyramids-poster.jpg) center/cover;animation:kbz 26s ease-in-out infinite alternate;filter:saturate(1.2) brightness(1.05)}
+@keyframes kbz{from{transform:scale(1.02) translate(0,0)}to{transform:scale(1.22) translate(-3%,2%)}}
+.shade{position:absolute!important;inset:0;z-index:1!important;background:radial-gradient(ellipse at 50% 45%,rgba(3,6,15,.05),rgba(3,6,15,.7) 78%),linear-gradient(180deg,rgba(13,31,69,.3),rgba(3,6,15,.7))}
+.rays{position:absolute!important;left:50%;top:38%;width:150vmax;height:150vmax;margin:-75vmax 0 0 -75vmax;z-index:1!important;opacity:.28;background:repeating-conic-gradient(from 0deg,rgba(242,202,80,.55) 0 2.5deg,transparent 2.5deg 11deg);-webkit-mask-image:radial-gradient(circle,#000 0,transparent 40%);mask-image:radial-gradient(circle,#000 0,transparent 40%);animation:spin 70s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+#dust{position:absolute!important;inset:0;width:100%;height:100%;z-index:1!important;pointer-events:none}
+.ttl{background:linear-gradient(100deg,#b8932a 20%,#fff3b0 45%,#f2ca50 55%,#b8932a 80%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent!important;animation:sheen 5s linear infinite;filter:drop-shadow(0 0 22px rgba(242,202,80,.45)) drop-shadow(0 3px 0 #5a430b);text-shadow:none!important}
+@keyframes sheen{to{background-position:-250% 0}}
+#entry .eye,#entry .ttl,#entry .sub,#entry .go,#entry .lnk{opacity:0;animation-fill-mode:forwards}
+#entry .eye{animation:rise 1.2s .3s forwards}#entry .ttl{animation:rise 1.6s .7s forwards,sheen 5s linear infinite}#entry .sub{animation:rise 1.4s 1.3s forwards}#entry .go{animation:rise 1.2s 2s forwards,pulse 2.2s 3.2s ease-in-out infinite}#entry .lnk{animation:rise 1s 2.6s forwards}
+@keyframes rise{from{opacity:0;transform:translateY(26px) scale(.96)}to{opacity:1;transform:none}}
+video.v.cur{animation:kbv 16s ease-out forwards}
+@keyframes kbv{from{scale:1.08}to{scale:1}}
+#entry.off,#end.off{opacity:0;pointer-events:none;visibility:hidden}
+#entry::before,#end::before{content:"";position:absolute;inset:14px;border:2px solid #d4af37;box-shadow:inset 0 0 0 5px #050914,inset 0 0 0 6px rgba(212,175,55,.5);pointer-events:none}
+.eye{font:500 14px/1 'Reem Kufi',serif;letter-spacing:.3em;color:#d4af37;margin-bottom:18px}
+.ttl{font:700 clamp(38px,11vw,76px)/1.15 'Amiri',serif;color:#f2ca50;text-shadow:0 0 30px rgba(242,202,80,.5),0 3px 0 #5a430b}
+.sub{max-width:30em;margin:16px 0 30px;font:400 clamp(16px,4.2vw,22px)/1.7 'Amiri',serif;color:#e8d8b0}
+.go{font:700 22px/1 'Amiri',serif;color:#241a00;padding:16px 44px;border-radius:999px;border:1px solid #fff3b0;background:linear-gradient(180deg,#f2ca50,#b8932a);box-shadow:0 0 0 2px #0d1f45,0 0 0 3px #d4af37,0 8px 24px rgba(0,0,0,.5),0 0 34px rgba(242,202,80,.45);cursor:pointer;animation:pulse 2.2s ease-in-out infinite}
+.lnk{margin-top:22px;font:500 14px 'Reem Kufi',serif;color:#d4af37;text-decoration:none;opacity:.8;background:none;border:0;cursor:pointer}
+@keyframes pulse{50%{box-shadow:0 0 0 2px #0d1f45,0 0 0 3px #d4af37,0 8px 24px rgba(0,0,0,.5),0 0 54px rgba(242,202,80,.8)}}
+#tap{position:absolute;inset:0;z-index:5}
+#paused{position:absolute;inset:0;z-index:4;display:none;place-items:center;pointer-events:none}
+#paused svg{width:84px;height:84px;fill:#f2ca50;filter:drop-shadow(0 0 16px #000);opacity:.9}
+.isp #paused{display:grid}
+@media (prefers-reduced-motion:reduce){.kb,.rays,.ttl,video.v.cur{animation:none!important}#entry .eye,#entry .ttl,#entry .sub,#entry .go,#entry .lnk{opacity:1;animation:none!important}.go{animation:none}.bgp,video.v,#entry,#end{transition:none}}
+#chatBtn{position:absolute;left:50%;bottom:calc(88px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:6;font:700 17px/1 'Amiri',serif;color:#241a00;padding:11px 26px;border-radius:999px;border:1px solid #fff3b0;background:linear-gradient(180deg,#f2ca50,#b8932a);box-shadow:0 0 0 2px #0d1f45,0 0 0 3px #d4af37,0 6px 18px rgba(0,0,0,.5);cursor:pointer;white-space:nowrap;transition:opacity .5s}
+.hide #chatBtn{opacity:0;pointer-events:none}
+#chatov{position:absolute;inset:0;z-index:30;display:none;justify-content:center;background:rgba(3,6,15,.86);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+#chatov.on{display:flex}
+#chatov .box{position:relative;width:min(100%,560px);height:100%;background:#070d1a;box-shadow:0 0 0 2px rgba(212,175,55,.6),0 0 60px #000}
+#chatov iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:#070d1a}
+#chatov .ib{position:absolute;top:calc(10px + env(safe-area-inset-top));left:10px;z-index:2;width:42px;height:42px}
+@media (min-width:700px){#chatov .box{height:min(100%,860px);margin:auto}}
+</style></head>
+<body>
+<div id="jr" class="hide">
+ <div class="bgp" id="bgp"></div>
+ <video class="v cur" id="vA" playsinline preload="auto"></video>
+ <video class="v" id="vB" playsinline preload="none"></video>
+ <div class="bar t"><div><div class="nm" id="nm"></div><div class="era" id="era"></div></div><div class="ct" id="ct"></div></div>
+ <div class="bar b"></div>
+ <div id="prog"><i id="pf"></i></div>
+ <div id="tap"></div>
+ <div id="paused"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+ <div id="top"><button class="ib" id="bExit" aria-label="خروج"><svg viewBox="0 0 24 24"><path d="M19 6.4 17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/></svg></button></div>
+ <button id="chatBtn">كلّم الملك</button>
+ <div id="chatov"><div class="box"><button class="ib" id="chatX" aria-label="إغلاق"><svg viewBox="0 0 24 24"><path d="M19 6.4 17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/></svg></button><iframe id="chatf" title="محادثة مع الحاكم" allow="clipboard-write"></iframe></div></div>
+ <div id="ctl">
+  <button class="ib" id="bPrev" aria-label="السابق"><svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/></svg></button>
+  <button class="ib" id="bPlay" aria-label="إيقاف مؤقت"><svg viewBox="0 0 24 24" id="icP"><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg></button>
+  <button class="ib" id="bMute" aria-label="الصوت"><svg viewBox="0 0 24 24" id="icM"><path d="M3 9v6h4l5 5V4L7 9zm13.5 3A4.5 4.5 0 0 0 14 8v8a4.5 4.5 0 0 0 2.5-4z"/></svg></button>
+  <button class="ib" id="bNext" aria-label="التالي"><svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z" transform="matrix(-1 0 0 1 24 0)"/></svg></button>
+ </div>
+ <div id="entry"><div class="kb"></div><div class="shade"></div><div class="rays"></div><canvas id="dust"></canvas><div class="eye">رحلة سينمائية</div><div class="ttl">رحلة حكام مصر</div><p class="sub">من مينا موحّد القطرين إلى العصر الحديث. خمسة وعشرون حاكمًا، فيلم واحد متواصل. اضغط وادخل الرحلة.</p><button class="go" id="goBtn">ابدأ الرحلة</button><a class="lnk" href="index.html">العودة للرئيسية</a></div>
+ <div id="end" class="off"><div class="kb"></div><div class="shade"></div><div class="eye">النهاية</div><div class="ttl">اكتملت الرحلة</div><p class="sub">مرّت أمامك مصر كلها، من فجر الدولة إلى اليوم.</p><button class="go" id="again">ابدأ من جديد</button><a class="lnk" href="index.html">العودة للرئيسية</a></div>
+</div>
+<script src="js/data.js"></script>
+<script src="js/gate.js"></script>
+<script>
+(function(){
+var R=(typeof RULERS!=='undefined'&&RULERS)||[],V='?v=2';
+var jr=document.getElementById('jr'),vA=document.getElementById('vA'),vB=document.getElementById('vB'),cur=vA,nxt=vB;
+var q=new URLSearchParams(location.search),idx=Math.max(0,R.findIndex(function(r){return r.id===q.get('r')}));
+var started=false,idle=null,muted=false,busy=false,pre=-1;
+function $(i){return document.getElementById(i)}
+function src(i){return R[i].video+V}
+function show(i){var r=R[i];$('nm').textContent=r.name;$('era').textContent=(r.eraLabel||'')+(r.years?' \u2022 '+r.years:'');$('ct').textContent=(i+1)+' / '+R.length;$('bgp').style.backgroundImage='url('+(r.portrait||'')+')';
+ try{var u=new URL(location.href);u.searchParams.set('r',r.id);history.replaceState({},'',u)}catch(e){}}
+function wake(){jr.classList.remove('hide');clearTimeout(idle);if(started&&!cur.paused)idle=setTimeout(function(){jr.classList.add('hide')},3200)}
+function setPlayIcon(){var p=cur.paused;$('icP').innerHTML=p?'<path d="M8 5v14l11-7z"/>':'<path d="M6 5h4v14H6zm8 0h4v14h-4z"/>';jr.classList.toggle('isp',p&&started&&!busy)}
+function load(el,i,auto){el.src=src(i);el.preload=auto?'auto':'metadata';el.poster='';el.load()}
+function play(){var p=cur.play();if(p&&p.catch)p.catch(function(){jr.classList.remove('hide');setPlayIcon()})}
+function go(i,first){
+ if(busy||i<0)return;
+ if(i>=R.length){end();return}
+ busy=true;var tgt=i;
+ RulerGate.run({name:R[i].name,era:R[i].eraLabel,years:R[i].years,tag:'الفصل '+(i+1)+' من '+R.length},function(){
+  idx=tgt;show(idx);
+  if(pre===idx&&nxt.src&&nxt.readyState>=1){cur.pause();cur.classList.remove('cur');var t=cur;cur=nxt;nxt=t;cur.classList.add('cur');cur.muted=muted;}
+  else{cur.pause();load(cur,idx,true);cur.muted=muted}
+  nxt.removeAttribute('src');nxt.load();pre=-1;
+  cur.currentTime=0;play();busy=false;setPlayIcon();wake();
+ });
+}
+function end(){drone(.14,2);cur.pause();$('end').classList.remove('off');jr.classList.remove('hide');started=false}
+function warm(){ if(idx+1<R.length&&pre!==idx+1){pre=idx+1;nxt.muted=true;load(nxt,idx+1,true)} }
+[vA,vB].forEach(function(v){
+ v.addEventListener('timeupdate',function(){if(v!==cur||!v.duration)return;$('pf').style.width=(v.currentTime/v.duration*100)+'%';if(v.currentTime/v.duration>.55)warm()});
+ v.addEventListener('ended',function(){if(v===cur)go(idx+1)});
+ v.addEventListener('play',function(){if(v===cur)setPlayIcon()});
+ v.addEventListener('pause',function(){if(v===cur)setPlayIcon()});
+});
+function start(){
+ started=true;$('entry').classList.add('off');audioInit();if(AC&&AC.state==='suspended')AC.resume();
+ var fs=document.documentElement.requestFullscreen||document.documentElement.webkitRequestFullscreen;try{if(fs){var p=fs.call(document.documentElement);if(p&&p.catch)p.catch(function(){})}}catch(e){}
+ busy=false;
+ // first clip: show the ruler gate, then play (the tap is the user gesture)
+ cur.muted=false;
+ busy=true;
+ RulerGate.run({name:R[idx].name,era:R[idx].eraLabel,years:R[idx].years,tag:'الفصل '+(idx+1)+' من '+R.length},function(){show(idx);load(cur,idx,true);cur.currentTime=0;play();busy=false;setPlayIcon();wake()});
+}
+var chatOpen=false,wasPlaying=false;
+$('chatBtn').addEventListener('click',function(e){e.stopPropagation();if(busy||!started)return;wasPlaying=!cur.paused;cur.pause();chatOpen=true;drone(.02,.8);$('chatf').src='chat.html?id='+encodeURIComponent(R[idx].id)+'&embed=1';$('chatov').classList.add('on')});
+$('chatX').addEventListener('click',function(){$('chatov').classList.remove('on');$('chatf').src='about:blank';chatOpen=false;drone(.045,1.5);if(wasPlaying)play();wake()});
+$('goBtn').addEventListener('click',start);
+$('again').addEventListener('click',function(){$('end').classList.add('off');idx=0;started=true;busy=false;go(0)});
+$('bPlay').addEventListener('click',function(e){e.stopPropagation();cur.paused?play():cur.pause();wake()});
+$('bNext').addEventListener('click',function(e){e.stopPropagation();go(idx+1);wake()});
+$('bPrev').addEventListener('click',function(e){e.stopPropagation();if(cur.currentTime>4){cur.currentTime=0}else go(Math.max(0,idx-1));wake()});
+$('bMute').addEventListener('click',function(e){e.stopPropagation();muted=!muted;cur.muted=muted;sfxOn=!muted;if(master)master.gain.value=muted?0:1;$('icM').innerHTML=muted?'<path d="M16.5 12A4.5 4.5 0 0 0 14 8v2.2l2.5 2.5zM19 12a7 7 0 0 1-.9 3.4l1.5 1.5A9 9 0 0 0 21 12a9 9 0 0 0-7-8.8v2.1a7 7 0 0 1 5 6.7zM4.3 3 3 4.3 7.7 9H3v6h4l5 5v-6.7l4.2 4.2c-.7.5-1.4.9-2.2 1.1v2.1a9 9 0 0 0 3.6-1.7l2 2 1.3-1.3L4.3 3zM12 4 9.9 6.1 12 8.2z"/>':'<path d="M3 9v6h4l5 5V4L7 9zm13.5 3A4.5 4.5 0 0 0 14 8v8a4.5 4.5 0 0 0 2.5-4z"/>';wake()});
+$('bExit').addEventListener('click',function(e){e.stopPropagation();try{if(document.fullscreenElement)document.exitFullscreen()}catch(x){}location.href='index.html'});
+$('tap').addEventListener('click',function(){if(!started)return;if(jr.classList.contains('hide')){wake()}else{cur.paused?play():cur.pause();wake()}});
+document.addEventListener('mousemove',function(){if(started)wake()});
+document.addEventListener('keydown',function(e){if(!started||chatOpen)return;if(e.key===' '){e.preventDefault();cur.paused?play():cur.pause()}else if(e.key==='ArrowLeft')go(idx+1);else if(e.key==='ArrowRight')go(Math.max(0,idx-1));wake()});
+document.addEventListener('visibilitychange',function(){if(document.hidden&&started&&!chatOpen){cur.pause();if(AC)AC.suspend()}else if(AC)AC.resume()});
+
+// ---------- light synthesized score (no audio files) ----------
+var AC=null,master=null,droneG=null,sfxOn=true;
+function audioInit(){
+ if(AC)return;var C=window.AudioContext||window.webkitAudioContext;if(!C)return;
+ try{AC=new C();master=AC.createGain();master.gain.value=1;master.connect(AC.destination);
+  droneG=AC.createGain();droneG.gain.value=0;var lp=AC.createBiquadFilter();lp.type='lowpass';lp.frequency.value=380;droneG.connect(lp);lp.connect(master);
+  [[55,'sawtooth',.5],[82.4,'sawtooth',.35],[110.3,'triangle',.4],[164.8,'sine',.25]].forEach(function(n){var o=AC.createOscillator();o.type=n[1];o.frequency.value=n[0];var g=AC.createGain();g.gain.value=n[2];o.connect(g);g.connect(droneG);o.start();
+   var l=AC.createOscillator();l.frequency.value=.07+Math.random()*.1;var lg=AC.createGain();lg.gain.value=n[0]*.004;l.connect(lg);lg.connect(o.frequency);l.start()});
+  var lf=AC.createOscillator();lf.frequency.value=.06;var lfg=AC.createGain();lfg.gain.value=140;lf.connect(lfg);lfg.connect(lp.frequency);lf.start();
+ }catch(e){AC=null}
+}
+function drone(v,t){if(!AC)return;droneG.gain.cancelScheduledValues(AC.currentTime);droneG.gain.linearRampToValueAtTime(v,AC.currentTime+(t||1.5))}
+function noiseBuf(){var b=AC.createBuffer(1,AC.sampleRate*2,AC.sampleRate),d=b.getChannelData(0);for(var i=0;i<d.length;i++)d[i]=Math.random()*2-1;return b}
+function boom(){if(!AC||!sfxOn)return;var t=AC.currentTime,o=AC.createOscillator(),g=AC.createGain();o.type='sine';o.frequency.setValueAtTime(110,t);o.frequency.exponentialRampToValueAtTime(34,t+1.1);g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(.9,t+.03);g.gain.exponentialRampToValueAtTime(.0001,t+1.6);o.connect(g);g.connect(master);o.start(t);o.stop(t+1.7);
+ var n=AC.createBufferSource();n.buffer=noiseBuf();var f=AC.createBiquadFilter();f.type='lowpass';f.frequency.setValueAtTime(900,t);f.frequency.exponentialRampToValueAtTime(80,t+.9);var ng=AC.createGain();ng.gain.setValueAtTime(.5,t);ng.gain.exponentialRampToValueAtTime(.0001,t+1);n.connect(f);f.connect(ng);ng.connect(master);n.start(t);n.stop(t+1.1)}
+function whoosh(){if(!AC||!sfxOn)return;var t=AC.currentTime,n=AC.createBufferSource();n.buffer=noiseBuf();var f=AC.createBiquadFilter();f.type='bandpass';f.Q.value=1.2;f.frequency.setValueAtTime(200,t);f.frequency.exponentialRampToValueAtTime(3200,t+1);var g=AC.createGain();g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(.45,t+.5);g.gain.exponentialRampToValueAtTime(.0001,t+1.3);n.connect(f);f.connect(g);g.connect(master);n.start(t);n.stop(t+1.4)}
+function chime(){if(!AC||!sfxOn)return;var t=AC.currentTime;[523.25,784,1046.5,1568].forEach(function(fr,i){var o=AC.createOscillator(),g=AC.createGain();o.type='sine';o.frequency.value=fr;g.gain.setValueAtTime(.0001,t+i*.09);g.gain.exponentialRampToValueAtTime(.16/(i+1),t+i*.09+.02);g.gain.exponentialRampToValueAtTime(.0001,t+i*.09+2.2);o.connect(g);g.connect(master);o.start(t+i*.09);o.stop(t+i*.09+2.3)})}
+RulerGate.on={close:function(){boom();drone(.16,.6)},show:function(){chime()},open:function(){whoosh();drone(.045,2.4)}};
+// ---------- dust on entry ----------
+(function(){var c=$('dust');if(!c||(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches))return;var x=c.getContext('2d'),w,h,d=Math.min(devicePixelRatio||1,2),ps=[],on=true;
+ function sz(){w=c.width=c.clientWidth*d;h=c.height=c.clientHeight*d}sz();addEventListener('resize',sz);
+ for(var i=0;i<(innerWidth<640?30:60);i++)ps.push({x:Math.random(),y:Math.random(),r:(Math.random()*1.8+.6)*d,v:.00004+Math.random()*.00012,s:Math.random()*6,a:.3+Math.random()*.5});
+ (function f(){if(!on)return;x.clearRect(0,0,w,h);ps.forEach(function(p){p.y-=p.v*16;p.x+=Math.sin(p.s+=.01)*.0004;if(p.y<-.02){p.y=1.02;p.x=Math.random()}x.globalAlpha=p.a*(.6+.4*Math.sin(p.s*3));x.fillStyle='#f2ca50';x.shadowColor='#f2ca50';x.shadowBlur=8*d;x.beginPath();x.arc(p.x*w,p.y*h,p.r,0,6.283);x.fill()});requestAnimationFrame(f)})();
+ var e=$('entry');new MutationObserver(function(){if(e.classList.contains('off'))on=false}).observe(e,{attributes:true});
+})();
+show(idx);
+})();
+</script>
+</body></html>

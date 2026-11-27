@@ -35,10 +35,10 @@
 ;(function(){var a=document.createElement('div');a.id='ambient';a.innerHTML='<div class="rays"></div><div class="disc"></div><div class="disc b"></div><div class="sweep"></div><div class="glyph g1"><svg viewBox="0 0 100 100"><circle cx="50" cy="38" r="16"/><path d="M50 54v40M34 68h32"/></svg></div><div class="glyph g2"><svg viewBox="0 0 100 100"><path d="M10 50Q50 18 90 50Q50 82 10 50Z"/><circle cx="50" cy="50" r="10"/><path d="M50 60v22q-8 10-18 8"/></svg></div><div class="glyph g3"><svg viewBox="0 0 100 100"><path d="M50 85V45M50 60Q30 55 28 30Q45 38 50 60M50 60Q70 55 72 30Q55 38 50 60M50 45Q40 30 50 12Q60 30 50 45"/></svg></div><div class="glyph g4"><svg viewBox="0 0 100 100"><path d="M20 80V30M20 30q-6-12 6-14t6 14M50 80V20M50 20q-6-12 6-14t6 14M80 80V30M80 30q-6-12 6-14t6 14M10 80h80"/></svg></div><svg class="dunes " viewBox="0 0 1200 200" preserveAspectRatio="none"><path d="M0 120C100 60 200 60 300 110S500 160 600 110 700 60 800 80 1000 150 1200 120V200H0Z" fill="#7a4a1c"/></svg><svg class="dunes d2" viewBox="0 0 1200 200" preserveAspectRatio="none"><path d="M0 120C100 60 200 60 300 110S500 160 600 110 700 60 800 80 1000 150 1200 120V200H0Z" fill="#a8742c"/></svg>';document.body.insertBefore(a,document.body.firstChild)})();
 
 ;(function(){var feed=document.getElementById('chatFeed');if(!feed)return;var sec=feed.closest('section');if(!sec)return;
-var mq=window.matchMedia('(max-width:700px)');
-function apply(){var on=mq.matches;document.body.classList.toggle('chat-fs',on);sec.classList.toggle('fs-chat',on);
+var mq=window.matchMedia('(max-width:700px)');var emb=/[?&]embed=1/.test(location.search);
+function apply(){var on=mq.matches||emb;document.body.classList.toggle('chat-fs',on);sec.classList.toggle('fs-chat',on);
  if(on){var h=document.querySelector('header,nav');var b=0;document.querySelectorAll('header,nav').forEach(function(e){var cs=getComputedStyle(e);if(cs.position==='fixed'||cs.position==='sticky'){b=Math.max(b,e.getBoundingClientRect().bottom)}});
- sec.style.setProperty('--hdr',Math.round(b||100)+'px')}}
+ sec.style.setProperty('--hdr',emb?'0px':Math.round(b||100)+'px')}}
 apply();(mq.addEventListener?mq.addEventListener('change',apply):mq.addListener(apply));window.addEventListener('resize',apply);})();
 
 ;(function(){var h1=document.querySelector('main h1');var hero=h1&&h1.closest('section');if(!hero||!/index\.html$|\/$/.test(location.pathname))return;

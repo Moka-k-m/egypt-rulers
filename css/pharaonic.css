@@ -107,7 +107,7 @@ button.prompt-chip[class*="bg-"]:not(#a):not(#b):not(#c):not(#d):not(#e):hover,b
 
 /* ===== big ambient animation layer ===== */
 #ambient{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
-body>*:not(#ambient):not(#dustCanvas):not(script){position:relative;z-index:1}
+body>*:not(#ambient):not(#dustCanvas):not(#rgate):not(script){position:relative;z-index:1}
 #ambient .rays{position:absolute;left:50%;top:-30vmax;width:120vmax;height:120vmax;margin-left:-60vmax;background:repeating-conic-gradient(from 0deg,rgba(242,202,80,.10) 0 6deg,transparent 6deg 15deg);-webkit-mask-image:radial-gradient(circle,#000 0,transparent 62%);mask-image:radial-gradient(circle,#000 0,transparent 62%);animation:amRot 140s linear infinite;will-change:transform}
 #ambient .disc{position:absolute;width:42vmax;height:42vmax;border-radius:50%;background:radial-gradient(circle,rgba(242,202,80,.34),rgba(212,130,40,.14) 45%,transparent 70%);left:-12vmax;top:18vh;animation:amDrift 60s ease-in-out infinite alternate;will-change:transform}
 #ambient .disc.b{left:auto;right:-14vmax;top:55vh;width:34vmax;height:34vmax;background:radial-gradient(circle,rgba(70,140,210,.28),rgba(30,80,160,.12) 50%,transparent 70%);animation-duration:75s;animation-direction:alternate-reverse}
@@ -248,3 +248,6 @@ html,body{overscroll-behavior:auto!important;touch-action:pan-y pinch-zoom;backg
  body::before,body::after{display:none!important}
 }
 body.chat-fs{overflow:hidden!important}#chatFeed{overflow-x:hidden!important}
+
+html body main section.fs-chat[class*="rounded-xl"].fs-chat,html body main section.fs-chat.fs-chat.fs-chat.fs-chat{background-color:#0a1428!important;background-image:none!important}
+html body main section.fs-chat:not(#a):not(#b):not(#c){background-color:#0a1428!important;background-image:none!important}

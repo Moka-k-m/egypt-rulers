@@ -426,7 +426,7 @@ ${monumentBlock(monuments[i])}
   // ---- Video banner (replaces audio strip) ----
   setText('video-banner-title', 'وثائقي ' + r.name);
   const videoBannerBtn = document.getElementById('video-banner-btn');
-  if (videoBannerBtn) videoBannerBtn.href = 'story.html?r=' + encodeURIComponent(r.id);
+  if (videoBannerBtn) videoBannerBtn.href = 'journey.html?r=' + encodeURIComponent(r.id);
 
   const portrait = document.getElementById('ruler-portrait');
   if (portrait) {
@@ -436,7 +436,7 @@ ${monumentBlock(monuments[i])}
   }
 
   const videoBtn = document.getElementById('btn-video');
-  if (videoBtn) videoBtn.href = 'story.html?r=' + encodeURIComponent(r.id);
+  if (videoBtn) videoBtn.href = 'journey.html?r=' + encodeURIComponent(r.id);
   const chatBtn = document.getElementById('btn-chat');
   if (chatBtn) chatBtn.href = 'chat.html?id=' + encodeURIComponent(r.id);
 
