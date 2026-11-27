@@ -56,7 +56,7 @@ document.querySelectorAll('main [class*="rounded-xl"]').forEach(function(c){if(m
 ;(function(){var a=document.getElementById('ambient');if(!a||!/index\.html$|\/$/.test(location.pathname))return;
 var c=navigator.connection||{};var slow=c.saveData||/(^|-)2g$/.test(c.effectiveType||'');
 var box=document.createElement('div');box.className='bgvideo';box.style.backgroundImage='url(pyramids-poster.jpg)';a.insertBefore(box,a.firstChild);
-if(!slow&&!matchMedia('(prefers-reduced-motion:reduce)').matches){var v=document.createElement('video');v.muted=true;v.loop=true;v.playsInline=true;v.autoplay=true;v.setAttribute('muted','');v.setAttribute('playsinline','');v.preload='auto';v.src='pyramids-loop.mp4';v.addEventListener('playing',function(){box.classList.add('on')});box.appendChild(v);var p=v.play();if(p&&p.catch)p.catch(function(){});
+if(!slow&&matchMedia('(hover:hover) and (min-width:901px)').matches&&!matchMedia('(prefers-reduced-motion:reduce)').matches){var v=document.createElement('video');v.muted=true;v.loop=true;v.playsInline=true;v.autoplay=true;v.setAttribute('muted','');v.setAttribute('playsinline','');v.preload='auto';v.src='pyramids-loop.mp4';v.addEventListener('playing',function(){box.classList.add('on')});box.appendChild(v);var p=v.play();if(p&&p.catch)p.catch(function(){});
 document.addEventListener('visibilitychange',function(){document.hidden?v.pause():v.play().catch(function(){})})}
 var f=document.querySelector('footer');if(f){var s=document.createElement('p');s.className='vid-credit';s.textContent='لقطات الخلفية: Blanka OG، عبر Pexels (ترخيص Pexels المجاني).';f.appendChild(s)}
 })();

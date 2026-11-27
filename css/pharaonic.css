@@ -141,7 +141,7 @@ body>*:not(#ambient):not(#dustCanvas):not(script){position:relative;z-index:1}
 }
 
 /* ===== bubbles never clipped (all sizes) ===== */
-#chatFeed{overflow-x:hidden}
+#chatFeed{overflow-x:clip}
 #chatFeed>div{min-width:0;max-width:92%!important}
 #chatFeed>div>div:last-child{min-width:0;flex:1 1 auto}#chatFeed>div>div:first-child:not(:last-child){flex:0 0 auto}
 #chatFeed>div>div>div,#chatFeed p,#chatFeed span{min-width:0;overflow-wrap:anywhere;word-break:break-word}
@@ -236,3 +236,15 @@ main [class*="rounded-xl"]:not(#chatFeed *){background-image:radial-gradient(240
 #ambient .bgvideo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,13,32,.55),rgba(13,31,69,.45) 45%,rgba(7,13,32,.82))}
 .vid-credit{text-align:center;font-size:.7rem;opacity:.6;margin-top:.6rem}
 @media (max-width:700px){html,body{background:#070d20!important}}
+html,body{overscroll-behavior:auto!important}
+
+/* ===== scroll safety (mobile) ===== */
+html,body{overscroll-behavior:auto!important;touch-action:pan-y pinch-zoom;background-attachment:scroll!important}
+#chatFeed{overscroll-behavior:contain;-webkit-overflow-scrolling:touch;touch-action:pan-y}
+@media (max-width:900px),(hover:none){
+ #ambient .dunes,#ambient .sweep,#ambient .rays,#ambient .glyph{display:none!important}
+ #ambient .disc{animation:none!important}
+ #dustCanvas{display:none!important}
+ body::before,body::after{display:none!important}
+}
+body.chat-fs{overflow:hidden!important}#chatFeed{overflow-x:hidden!important}
