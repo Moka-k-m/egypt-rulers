@@ -33,6 +33,12 @@ const CONFIG = {
   apiKey: "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",
   model: "openai/gpt-oss-120b",
 
+  /* مزودو الذكاء الاصطناعي الاحتياطيون: إن فشل Groq (مفتاح موقوف أو حدّ الاستخدام) ينتقل الشات تلقائيًا للتالي بالترتيب. */
+  fallbackProviders: [
+    { name: "Gemini", endpoint: "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions", apiKey: "AQ.Ab8RN6IomRJA5he2jXXy-xb2n1-Y9tNANn-xnd3k9BTQ4rgTeg", models: ["gemini-2.5-flash"] },
+    { name: "OpenRouter", endpoint: "https://openrouter.ai/api/v1/chat/completions", apiKey: "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", models: ["nvidia/nemotron-3-ultra-550b-a55b:free", "openrouter/free"] }
+  ],
+
   /* ---------- 3) ملف معلومات بوت الملك ----------
      ملف JSON بجانب index.html فيه شخصية كل ملك ومعلوماته.
      افتح king-bot-info.json واملأه بالمعلومات التي تريد أن يعرفها البوت. */
