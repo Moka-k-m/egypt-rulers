@@ -77,3 +77,30 @@
 @media (max-height:640px){#rgate .rg-card b{font-size:clamp(44px,12vw,90px)!important}}
 #rgate .rg-map{direction:ltr}
 #rgate.show:not(.out) .rg-beam{opacity:.12}
+/* perf pass: compositor-only animation, will-change only while running */
+#rgate .rg-l,#rgate .rg-r{will-change:auto}
+#rgate.on .rg-l,#rgate.on .rg-r,#rgate.on .rg-card,#rgate.on .rg-beam,#rgate.on .rg-flash{will-change:transform,opacity}
+#rgate .rg-l,#rgate .rg-r{backface-visibility:hidden;contain:strict}
+#rgate .rg-card b u{filter:none!important;transform:translateY(24px) scale(1.15)}
+@keyframes rgletter{to{opacity:1;transform:none}}
+#rgate .rg-beam{box-shadow:0 0 18px 6px rgba(255,238,160,.8),0 0 50px 22px rgba(242,202,80,.45)}
+#rgate .rg-map{filter:none}
+#rgate .rg-rays{width:110vmax;height:110vmax;margin:-55vmax 0 0 -55vmax;will-change:transform;animation-duration:60s}
+#rgate .rg-card b{text-shadow:0 0 18px rgba(242,202,80,.6),0 2px 0 #5a430b}
+#rgate.out .rg-rays{animation-play-state:paused}
+/* low-end devices */
+#rgate.lite .rg-rays,#rgate.lite .rg-vig{display:none}
+#rgate.lite:not(.out){animation:none}
+#rgate.lite .rg-beam{box-shadow:0 0 14px 4px rgba(255,238,160,.7)}
+#rgate.lite .rg-l,#rgate.lite .rg-r{box-shadow:none;background:linear-gradient(180deg,#12306a,#0b1224)}
+#rgate.lite .rg-l::after,#rgate.lite .rg-r::after{display:none}
+#rgate.lite .rg-card b{text-shadow:0 2px 0 #5a430b}
+#rgate.lite .rg-card small{text-shadow:none}
+#rgate.lite .mp-ring.r2{display:none}
+#rgate.lite .mp-nile{animation:none!important;stroke-dashoffset:0;opacity:0}
+#rgate.lite.show .mp-nile{animation:rgfade .8s 2s forwards!important}
+#rgate.lite .rg-mapw{transform:none}
+#rgate.lite.show .rg-mapw{animation:rgfade .9s 1.7s forwards}
+#rgate.lite .rg-cap{text-shadow:none}
+#rgate.lite .mp-lbl{paint-order:normal;stroke:none}
+@media (prefers-reduced-motion:reduce){#rgate .rg-rays,#rgate .rg-vig{display:none}}

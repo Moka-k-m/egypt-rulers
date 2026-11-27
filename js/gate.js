@@ -1,5 +1,6 @@
 (function(){
  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var lite=(navigator.hardwareConcurrency&&navigator.hardwareConcurrency<=4)||(navigator.deviceMemory&&navigator.deviceMemory<=4)||/Android [4-9]\b|Android 1[0-1]\b/.test(navigator.userAgent)&&Math.min(screen.width,screen.height)<=420&&(window.devicePixelRatio||1)<=2.5;
  var busy=false,el;
  function build(){
   el=document.createElement('div');el.id='rgate';el.setAttribute('aria-hidden','true');
@@ -23,12 +24,12 @@
   el.querySelector('.rg-era').textContent=info.era||'';
   el.querySelector('.rg-name').innerHTML=letters(info.name);
   el.querySelector('.rg-yrs').textContent=info.years||'';
-  var mh=mapHTML(info.cap);el.querySelector('.rg-mapw').innerHTML=mh?mh+'<div class="rg-cap"><span>العاصمة</span>'+String(info.cap).replace(/ \(.*\)/,'')+'</div>':'';
+  var mh=mapHTML(info.cap);var mhtml=mh?mh+'<div class="rg-cap"><span>العاصمة</span>'+String(info.cap).replace(/ \(.*\)/,'')+'</div>':'';el.querySelector('.rg-mapw').innerHTML='';
   void el.offsetWidth;
-  el.className=reduce?'on rd':'on';
+  el.className=(reduce?'on rd':'on')+(lite?' lite':'');
   var t1=reduce?160:700, t2=reduce?(mh?1900:700):(mh?6000:2700);
   if(ev.close)try{ev.close()}catch(e){}
-  setTimeout(function(){try{mid()}catch(e){}el.classList.add('show');if(ev.show)try{ev.show()}catch(e){}},t1);
+  setTimeout(function(){try{mid()}catch(e){}el.classList.add('show');setTimeout(function(){if(busy)el.querySelector('.rg-mapw').innerHTML=mhtml},reduce?0:150);if(ev.show)try{ev.show()}catch(e){}},t1);
   setTimeout(function(){el.classList.add('out');if(ev.open)try{ev.open()}catch(e){}if(after)try{after()}catch(e){}},t2-(reduce?200:900));
   setTimeout(function(){el.className='';busy=false},t2);
  }};
