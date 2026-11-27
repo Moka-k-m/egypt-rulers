@@ -8,7 +8,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%93%82%80%3C/text%3E%3C/svg%3E"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&amp;family=Reem+Kufi:wght@500;700&amp;display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="css/gate.css"/>
+<link rel="stylesheet" href="css/gate.css"/><link rel="stylesheet" href="css/facts.css"/>
 <style>
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 html,body{height:100%;background:#03060f;color:#e8d8b0;font-family:'Amiri',serif;overflow:hidden;overscroll-behavior:none}
@@ -81,7 +81,9 @@ video.v.cur{animation:kbv 16s ease-out forwards}
  <div id="tap"></div>
  <div id="paused"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
  <div id="top"><button class="ib" id="bExit" aria-label="خروج"><svg viewBox="0 0 24 24"><path d="M19 6.4 17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/></svg></button></div>
+ <button id="factBtn">الإنجازات والآثار</button>
  <button id="chatBtn">كلّم الملك</button>
+ <div id="factov"><button class="ib" id="factX" aria-label="إغلاق"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M19 6.4 17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/></svg></button><div class="box"><h2 class="rf-title" id="factT"></h2><div id="factB"></div></div></div>
  <div id="chatov"><div class="box"><button class="ib" id="chatX" aria-label="إغلاق"><svg viewBox="0 0 24 24"><path d="M19 6.4 17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/></svg></button><iframe id="chatf" title="محادثة مع الحاكم" allow="clipboard-write"></iframe></div></div>
  <div id="ctl">
   <button class="ib" id="bPrev" aria-label="السابق"><svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/></svg></button>
@@ -93,7 +95,7 @@ video.v.cur{animation:kbv 16s ease-out forwards}
  <div id="end" class="off"><div class="kb"></div><div class="shade"></div><div class="eye">النهاية</div><div class="ttl">اكتملت الرحلة</div><p class="sub">مرّت أمامك مصر كلها، من فجر الدولة إلى اليوم.</p><button class="go" id="again">ابدأ من جديد</button><a class="lnk" href="index.html">العودة للرئيسية</a></div>
 </div>
 <script src="js/data.js"></script>
-<script src="js/gate.js"></script>
+<script src="js/gate.js"></script><script src="js/facts.js"></script>
 <script>
 (function(){
 var R=(typeof RULERS!=='undefined'&&RULERS)||[],V='?v=2';
@@ -112,13 +114,13 @@ function go(i,first){
  if(busy||i<0)return;
  if(i>=R.length){end();return}
  busy=true;var tgt=i;
- RulerGate.run({name:R[i].name,era:R[i].eraLabel,years:R[i].years,tag:'الفصل '+(i+1)+' من '+R.length},function(){
+ RulerGate.run({cap:R[i].capital,name:R[i].name,era:R[i].eraLabel,years:R[i].years,tag:'الفصل '+(i+1)+' من '+R.length},function(){
   idx=tgt;show(idx);
   if(pre===idx&&nxt.src&&nxt.readyState>=1){cur.pause();cur.classList.remove('cur');var t=cur;cur=nxt;nxt=t;cur.classList.add('cur');cur.muted=muted;}
   else{cur.pause();load(cur,idx,true);cur.muted=muted}
   nxt.removeAttribute('src');nxt.load();pre=-1;
-  cur.currentTime=0;play();busy=false;setPlayIcon();wake();
- });
+  cur.currentTime=0;
+ },function(){play();busy=false;setPlayIcon();wake()});
 }
 function end(){drone(.14,2);cur.pause();$('end').classList.remove('off');jr.classList.remove('hide');started=false}
 function warm(){ if(idx+1<R.length&&pre!==idx+1){pre=idx+1;nxt.muted=true;load(nxt,idx+1,true)} }
@@ -135,10 +137,12 @@ function start(){
  // first clip: show the ruler gate, then play (the tap is the user gesture)
  cur.muted=false;
  busy=true;
- RulerGate.run({name:R[idx].name,era:R[idx].eraLabel,years:R[idx].years,tag:'الفصل '+(idx+1)+' من '+R.length},function(){show(idx);load(cur,idx,true);cur.currentTime=0;play();busy=false;setPlayIcon();wake()});
+ RulerGate.run({cap:R[idx].capital,name:R[idx].name,era:R[idx].eraLabel,years:R[idx].years,tag:'الفصل '+(idx+1)+' من '+R.length},function(){show(idx);load(cur,idx,true);cur.currentTime=0},function(){play();busy=false;setPlayIcon();wake()});
 }
 var chatOpen=false,wasPlaying=false;
 $('chatBtn').addEventListener('click',function(e){e.stopPropagation();if(busy||!started)return;wasPlaying=!cur.paused;cur.pause();chatOpen=true;drone(.02,.8);$('chatf').src='chat.html?id='+encodeURIComponent(R[idx].id)+'&embed=1';$('chatov').classList.add('on')});
+$('factBtn').addEventListener('click',function(e){e.stopPropagation();if(busy||!started)return;wasPlaying=!cur.paused;cur.pause();chatOpen=true;drone(.03,.8);$('factT').textContent=R[idx].name+' • '+(R[idx].capital||'').replace(/ \(.*\)/,'');RulerFacts.render($('factB'),R[idx]);$('factov').scrollTop=0;$('factov').classList.add('on')});
+$('factX').addEventListener('click',function(){$('factov').classList.remove('on');chatOpen=false;drone(.045,1.5);if(wasPlaying)play();wake()});
 $('chatX').addEventListener('click',function(){$('chatov').classList.remove('on');$('chatf').src='about:blank';chatOpen=false;drone(.045,1.5);if(wasPlaying)play();wake()});
 $('goBtn').addEventListener('click',start);
 $('again').addEventListener('click',function(){$('end').classList.add('off');idx=0;started=true;busy=false;go(0)});
