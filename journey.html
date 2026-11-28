@@ -63,7 +63,7 @@ video.v.cur{animation:kbv 16s ease-out forwards}
 #paused svg{width:84px;height:84px;fill:#f2ca50;filter:drop-shadow(0 0 16px #000);opacity:.9}
 .isp #paused{display:grid}
 @media (prefers-reduced-motion:reduce){.kb,.rays,.ttl,video.v.cur{animation:none!important}#entry .eye,#entry .ttl,#entry .sub,#entry .go,#entry .lnk{opacity:1;animation:none!important}.go{animation:none}.bgp,video.v,#entry,#end{transition:none}}
-.side{position:absolute;top:50%;transform:translateY(-50%);z-index:2;display:none;width:min(380px,calc((100vw - min(100vw,calc(100dvh*9/16)))/2 - 40px));max-height:76vh;overflow:hidden;padding:18px 20px;border:1px solid rgba(212,175,55,.45);border-radius:14px;background:rgba(5,9,20,.55);box-shadow:0 0 0 1px rgba(5,9,20,.8),0 10px 34px rgba(0,0,0,.45)}
+.side{position:absolute;top:50%;transform:translateY(-50%);z-index:2;display:none;width:min(380px,calc((100vw - min(100vw,calc(100dvh*9/16)))/2 - 40px));max-height:76vh;overflow-y:auto;scrollbar-width:thin;scrollbar-color:rgba(212,175,55,.4) transparent;padding:18px 20px;border:1px solid rgba(212,175,55,.45);border-radius:14px;background:rgba(5,9,20,.55);box-shadow:0 0 0 1px rgba(5,9,20,.8),0 10px 34px rgba(0,0,0,.45)}
 .side.r{right:20px}.side.l{left:20px}
 .side h3{font:700 17px/1.4 'Reem Kufi',serif;color:#f2ca50;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid rgba(212,175,55,.3);letter-spacing:.02em}
 .side ol{list-style:none}
