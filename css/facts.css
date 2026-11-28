@@ -19,7 +19,7 @@
 #factov .ib{position:fixed;top:calc(10px + env(safe-area-inset-top));left:10px;z-index:2;width:42px;height:42px}
 #factBtn{position:absolute;left:50%;bottom:calc(140px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:6;font:700 16px/1 'Amiri',serif;color:#f2ca50;padding:9px 22px;border-radius:999px;border:1px solid #d4af37;background:rgba(7,13,26,.72);box-shadow:0 0 0 2px #0d1f45,0 4px 18px rgba(0,0,0,.6);cursor:pointer;white-space:nowrap}
 .hide #factBtn{opacity:0;pointer-events:none}
-.rf-ul li.rf-has{display:flex;gap:10px;align-items:flex-start}
-.rf-img{flex:none;width:96px;height:64px;object-fit:cover;border-radius:6px;border:1px solid rgba(212,175,55,.5);background:#0a1228}
+.rf-ul li.rf-has{display:block}
+.rf-img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:8px;border:1px solid rgba(212,175,55,.5);background:#0a1228;margin-bottom:6px}
 .rf-tx{min-width:0}
 .rf-cr{display:block;margin-top:2px;font:400 10px/1.4 'Reem Kufi',serif;color:#b9a56a;opacity:.8;text-decoration:none;direction:ltr;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}

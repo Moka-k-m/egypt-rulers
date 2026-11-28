@@ -11,7 +11,7 @@
   if(m.length){
    var c2=el('section','rf-col');
    var h2=el('h3','rf-h');h2.appendChild(el('i','rf-ic','\u25B2'));h2.appendChild(el('span','','أبرز الآثار والمعالم'));c2.appendChild(h2);
-   var ul=el('ul','rf-ul');m.forEach(function(x){var li=el('li','');var mi=window.monImg&&window.monImg(r,x._i);if(mi){li.className='rf-has';var im=new Image();im.loading='lazy';im.decoding='async';im.width=120;im.height=80;im.alt=x.title;im.src=mi.s;im.className='rf-img';li.appendChild(im)}var tx=el('div','rf-tx');tx.appendChild(el('strong','',x.title));if(x.location)tx.appendChild(el('small','','\u2316 '+x.location));if(mi){var cr=el('a','rf-cr','\uD83D\uDCF7 '+mi.a+' \u00B7 '+mi.l);cr.href=mi.u;cr.target='_blank';cr.rel='noopener';tx.appendChild(cr)}li.appendChild(tx);ul.appendChild(li)});c2.appendChild(ul);
+   var ul=el('ul','rf-ul');m.forEach(function(x){var li=el('li','');var mi=window.monImg&&window.monImg(r,x._i);if(mi){li.className='rf-has';var im=new Image();im.loading='lazy';im.decoding='async';im.width=640;im.height=426;im.alt=x.title;im.src=mi.s;im.className='rf-img';li.appendChild(im)}var tx=el('div','rf-tx');tx.appendChild(el('strong','',x.title));if(x.location)tx.appendChild(el('small','','\u2316 '+x.location));if(mi){var cr=el('a','rf-cr','\uD83D\uDCF7 '+mi.a+' \u00B7 '+mi.l);cr.href=mi.u;cr.target='_blank';cr.rel='noopener';tx.appendChild(cr)}li.appendChild(tx);ul.appendChild(li)});c2.appendChild(ul);
    w.appendChild(c2);
   }
   return w;
