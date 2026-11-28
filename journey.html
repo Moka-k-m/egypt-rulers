@@ -72,6 +72,7 @@ video.v.cur{animation:kbv 16s ease-out forwards}
 .side ul{list-style:none}
 .side ul li{margin-bottom:9px;font:700 15px/1.5 'Amiri',serif;color:#f0e2c0}
 .side ul li small{display:block;font:400 12.5px/1.5 'Reem Kufi',serif;color:#d4af37;opacity:.9}
+.side ul li.has{display:flex;gap:10px;align-items:flex-start}.side .mi{flex:none;width:96px;height:64px;object-fit:cover;border-radius:6px;border:1px solid rgba(212,175,55,.5)}.side .tx{min-width:0}.side .cr{display:block;margin-top:2px;font:400 10px/1.4 'Reem Kufi',serif;color:#b9a56a;opacity:.8;text-decoration:none;direction:ltr;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .side{opacity:0}
 .side.in{opacity:1;transition:opacity .8s .15s}
 @media (min-width:1100px) and (min-aspect-ratio:1/1){.side{display:block}}
@@ -111,7 +112,7 @@ video.v.cur{animation:kbv 16s ease-out forwards}
  <div id="end" class="off"><div class="kb"></div><div class="shade"></div><div class="eye">النهاية</div><div class="ttl">اكتملت الرحلة</div><p class="sub">مرّت أمامك مصر كلها، من فجر الدولة إلى اليوم.</p><button class="go" id="again">ابدأ من جديد</button><a class="lnk" href="index.html">العودة للرئيسية</a></div>
 </div>
 <script src="js/data.js"></script>
-<script src="js/gate.js"></script><script src="js/facts.js"></script>
+<script src="js/monument-imgs.js"></script><script src="js/gate.js"></script><script src="js/facts.js"></script>
 <script>
 (function(){
 var R=(typeof RULERS!=='undefined'&&RULERS)||[],V='?v=2';
@@ -120,15 +121,15 @@ var q=new URLSearchParams(location.search),idx=Math.max(0,R.findIndex(function(r
 var started=false,idle=null,muted=false,busy=false,pre=-1;
 function $(i){return document.getElementById(i)}
 function src(i){return R[i].video+V}
-function side(ach,art){
+function side(ach,art,r){
  var R2=$('sideR'),L2=$('sideL');
  var h='<h3>أهم الإنجازات</h3><ol>'+ach.slice(0,3).map(function(t,i){return '<li><b>'+(i+1)+'</b><span>'+t+'</span></li>'}).join('')+'</ol>';
  R2.innerHTML=h;
- var h2='<h3>أبرز الآثار والمعالم</h3><ul>'+art.slice(0,4).map(function(x){return '<li>'+x.title+(x.location?'<small>\u2316 '+x.location+'</small>':'')+'</li>'}).join('')+'</ul>';
+ var h2='<h3>أبرز الآثار والمعالم</h3><ul>'+art.slice(0,4).map(function(x,i){var mi=window.monImg&&window.monImg(r,(r.artifacts||[]).indexOf(x));return '<li'+(mi?' class="has"':'')+'>'+(mi?'<img class="mi" loading="lazy" decoding="async" width="120" height="80" alt="" src="'+mi.s+'">':'')+'<div class="tx">'+x.title+(x.location?'<small>\u2316 '+x.location+'</small>':'')+(mi?'<a class="cr" target="_blank" rel="noopener" href="'+mi.u+'">\uD83D\uDCF7 '+mi.a+' \u00B7 '+mi.l+'</a>':'')+'</div></li>'}).join('')+'</ul>';
  L2.innerHTML=art.length?h2:'';
  [R2,L2].forEach(function(e){e.classList.remove('in');void e.offsetWidth;e.classList.add('in')});
 }
-function show(i){var r=R[i];side(r.achievements||[],(r.artifacts||[]).filter(Boolean));$('nm').textContent=r.name;$('era').textContent=(r.eraLabel||'')+(r.years?' \u2022 '+r.years:'');$('ct').textContent=(i+1)+' / '+R.length;$('bgp').style.backgroundImage='url('+(r.portrait||'')+')';
+function show(i){var r=R[i];side(r.achievements||[],(r.artifacts||[]).filter(Boolean),r);$('nm').textContent=r.name;$('era').textContent=(r.eraLabel||'')+(r.years?' \u2022 '+r.years:'');$('ct').textContent=(i+1)+' / '+R.length;$('bgp').style.backgroundImage='url('+(r.portrait||'')+')';
  try{var u=new URL(location.href);u.searchParams.set('r',r.id);history.replaceState({},'',u)}catch(e){}}
 function wake(){jr.classList.remove('hide');clearTimeout(idle);if(started&&!cur.paused)idle=setTimeout(function(){jr.classList.add('hide')},3200)}
 function setPlayIcon(){var p=cur.paused;$('icP').innerHTML=p?'<path d="M8 5v14l11-7z"/>':'<path d="M6 5h4v14H6zm8 0h4v14h-4z"/>';jr.classList.toggle('isp',p&&started&&!busy)}
